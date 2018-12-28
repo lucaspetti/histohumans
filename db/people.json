@@ -1,10 +1,10 @@
 [
   {
-    "first_name": "ab",
-    "last_name": "l",
-    "occupation": "l",
-    "photo": "al.jpg",
-    "birthdate": "1865-04-15",
+    "first_name": "Abraham",
+    "last_name": "Lincoln",
+    "occupation": "Lawyer and Politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+    "birthdate": "1809-02-12",
     "death": "1865-04-15"
   }
 ]
