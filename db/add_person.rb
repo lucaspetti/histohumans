@@ -23,15 +23,13 @@ person_hash = { first_name: first_name,
                 last_name: last_name,
                 occupation: occupation,
                 photo: img_url,
-              # imgWidth: FastImage.size(img_url)[0],
-              # imgHeight: FastImage.size(img_url)[1],
-                birthdate = Date.parse(birthdate),
-                death = Date.parse(death)
+                birthdate: Date.parse(birthdate),
+                death: Date.parse(death)
                }
 
 json = File.read("people.json")
 json_array = JSON.parse(json)
-json_array << poem_hash
+json_array << person_hash
 
 File.open("people.json", "w") do |f|
   f.puts JSON.pretty_generate(json_array)
