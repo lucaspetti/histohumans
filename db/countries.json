@@ -9,5 +9,14 @@
     "name": "United States",
     "period": "1776 - present"
   },
-
+  {
+    "continent": "North America",
+    "name": "Mexico",
+    "period": "1810 - present"
+  },
+  {
+    "continent": "Central America",
+    "name": "Cuba",
+    "period": "1868 - present"
+  }
 ]
