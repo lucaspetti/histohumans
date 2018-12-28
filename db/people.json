@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "first_name": "ab",
+    "last_name": "l",
+    "occupation": "l",
+    "photo": "al.jpg",
+    "birthdate": "1865-04-15",
+    "death": "1865-04-15"
+  }
+]

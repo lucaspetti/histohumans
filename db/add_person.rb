@@ -1,5 +1,5 @@
-# require 'json'
-# require 'fastimage'
+require 'json'
+require 'date'
 
 puts 'First name:'
 first_name = gets.chomp
@@ -27,10 +27,10 @@ person_hash = { first_name: first_name,
                 death: Date.parse(death)
                }
 
-json = File.read("people.json")
+json = File.read("db/people.json")
 json_array = JSON.parse(json)
 json_array << person_hash
 
-File.open("people.json", "w") do |f|
+File.open("db/people.json", "w") do |f|
   f.puts JSON.pretty_generate(json_array)
 end
