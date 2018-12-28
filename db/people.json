@@ -5,6 +5,16 @@
     "occupation": "Lawyer and Politician",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/220px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
     "birthdate": "1809-02-12",
-    "death": "1865-04-15"
+    "death": "1865-04-15",
+    "country": "United States"
+  },
+  {
+    "first_name": "Willy",
+    "last_name": "Brandt",
+    "occupation": "Politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bundesarchiv_B_145_Bild-F057884-0009%2C_Willy_Brandt.jpg/220px-Bundesarchiv_B_145_Bild-F057884-0009%2C_Willy_Brandt.jpg",
+    "birthdate": "1913-12-18",
+    "death": "1992-10-08",
+    "country": "Germany"
   }
 ]

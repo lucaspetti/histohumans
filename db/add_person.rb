@@ -27,8 +27,8 @@ person_hash = { first_name: first_name,
                 occupation: occupation,
                 photo: img_url,
                 birthdate: Date.parse(birthdate),
-                death: Date.parse(death)
-                country: Country.find_by(name: country_name)
+                death: Date.parse(death),
+                country: country_name
                }
 
 json = File.read("db/people.json")
