@@ -22,13 +22,17 @@ birthdate = gets.chomp
 puts 'Death:'
 death = gets.chomp
 
+puts 'Give a short bio (can be edited later):'
+bio = gets.chomp
+
 person_hash = { first_name: first_name,
                 last_name: last_name,
                 occupation: occupation,
                 photo: img_url,
                 birthdate: Date.parse(birthdate),
                 death: Date.parse(death),
-                country: country_name
+                country: country_name,
+                bio: bio
                }
 
 json = File.read("db/people.json")
