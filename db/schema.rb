@@ -10,9 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_12_28_114340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "atlas", force: :cascade do |t|
+    t.integer "year"
+    t.string "photo"
+    t.bigint "country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_atlas_on_country_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "continent"
+    t.string "name"
+    t.string "period"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "occupation"
+    t.date "birthdate"
+    t.date "death"
+    t.text "bio"
+    t.bigint "country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_people_on_country_id"
+  end
+
+  add_foreign_key "atlas", "countries"
+  add_foreign_key "people", "countries"
 end
