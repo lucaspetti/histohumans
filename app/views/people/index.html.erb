@@ -1,5 +1,7 @@
 <div class="container text-center">
   <% @people.each do |person| %>
-  <%= person.first_name person.last_name %>
+  <ul>
+    <li><%= person.first_name %> <%= person.last_name %></li>
+  </ul>
   <% end %>
 </div>

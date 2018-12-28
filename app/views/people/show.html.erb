@@ -1,3 +1,5 @@
 <div class="container text-center">
-  <%= @person.first_name @person.last_name %>
+  <h2><%= @person.first_name %> <%= @person.last_name %></h2>
+  <h4><%= @person.birthdate %> - <%= @person.death %></h4>
+  <p><%= @person.bio %></p>
 </div>
