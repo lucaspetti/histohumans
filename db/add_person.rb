@@ -7,13 +7,16 @@ first_name = gets.chomp
 puts 'Last name:'
 last_name = gets.chomp
 
+puts 'Country:'
+country_name = gets.chomp
+
 puts 'Occupation:'
 occupation = gets.chomp
 
 puts 'Image URL:'
 img_url = gets.chomp
 
-puts 'Birthdate:'
+puts 'Birthdate (pass as 1789-07-10):'
 birthdate = gets.chomp
 # Date needs to be passed as 1789-07-10
 puts 'Death:'
@@ -25,6 +28,7 @@ person_hash = { first_name: first_name,
                 photo: img_url,
                 birthdate: Date.parse(birthdate),
                 death: Date.parse(death)
+                country: Country.find_by(name: country_name)
                }
 
 json = File.read("db/people.json")
