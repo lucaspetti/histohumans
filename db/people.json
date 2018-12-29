@@ -18,5 +18,45 @@
     "death": "1992-10-08",
     "country": "Germany",
     "bio": "Willy Brandt was a German statesman who was leader of the Social Democratic Party of Germany (SPD) from 1964 to 1987 and served as Chancellor of the Federal Republic of Germany (West Germany) from 1969 to 1974. He was awarded the Nobel Peace Prize in 1971 for his efforts to strengthen cooperation in western Europe through the EEC and to achieve reconciliation between West Germany and the countries of Eastern Europe. He was the first Social Democrat chancellor since 1930."
+  },
+  {
+    "first_name": "Napoleon",
+    "last_name": "Bonaparte",
+    "occupation": "Statesman and military leader",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/220px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+    "birthdate": "1769-08-15",
+    "death": "1821-05-05",
+    "country": "France",
+    "bio": "Napoléon Bonaparte was a French statesman and military leader who rose to prominence during the French Revolution and led several successful campaigns during the French Revolutionary Wars. He was Emperor of the French from 1804 until 1814 and again briefly in 1815 during the Hundred Days. Napoleon dominated European and global affairs for more than a decade while leading France against a series of coalitions in the Napoleonic Wars. He won most of these wars and the vast majority of his battles, building a large empire that ruled over continental Europe before its final collapse in 1815. He is considered one of the greatest commanders in history, and his wars and campaigns are studied at military schools worldwide. Napoleon's political and cultural legacy has endured as one of the most celebrated and controversial leaders in human history."
+  },
+  {
+    "first_name": "Oliver",
+    "last_name": "Cromwell",
+    "occupation": "Military and political leader",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Oliver_Cromwell_by_Samuel_Cooper.jpg/220px-Oliver_Cromwell_by_Samuel_Cooper.jpg",
+    "birthdate": "1599-04-25",
+    "death": "1658-09-03",
+    "country": "England",
+    "bio": "Oliver Cromwell was an English military and political leader. He served as Lord Protector of the Commonwealth of England, Scotland, and Ireland from 1653 until his death, acting simultaneously as head of state and head of government of the new republic."
+  },
+  {
+    "first_name": "Christopher",
+    "last_name": "Columbus",
+    "occupation": "Navigator",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/220px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
+    "birthdate": "1451-10-31",
+    "death": "1506-05-20",
+    "country": "Italy",
+    "bio": "Christopher Columbus was an Italian explorer, navigator, and colonist who completed four voyages across the Atlantic Ocean under the auspices of the Catholic Monarchs of Spain. He led the first European expeditions to the Caribbean, Central America, and South America, initiating the permanent European colonization of the Americas. Columbus discovered the viable sailing route to the Americas, a continent which was not then known to the Old World. While what he thought he had discovered was a route to the Far East, he is credited with the opening of the Americas for conquest and settlement by Europeans."
+  },
+  {
+    "first_name": "Plato",
+    "last_name": "",
+    "occupation": "Philosopher",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg/220px-Plato_Silanion_Musei_Capitolini_MC1377.jpg",
+    "birthdate": "-0428-01-01",
+    "death": "-0348-01-01",
+    "country": "Greece",
+    "bio": "Plato was a philosopher in Classical Greece and the founder of the Academy in Athens, the first institution of higher learning in the Western world. He is widely considered the pivotal figure in the development of Western philosophy. Unlike nearly all of his philosophical contemporaries, Plato's entire work is believed to have survived intact for over 2,400 years."
   }
 ]
