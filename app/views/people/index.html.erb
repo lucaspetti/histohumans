@@ -1,7 +1,7 @@
 <div class="container text-center">
   <% @people.each do |person| %>
   <ul>
-    <li><%= person.first_name %> <%= person.last_name %></li>
+    <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
   </ul>
   <% end %>
 </div>
