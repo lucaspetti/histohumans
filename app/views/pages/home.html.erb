@@ -1,4 +1,9 @@
 <div class="container text-center">
   <h1>Histohumans</h1>
   <p>Check out <%= link_to 'historical characters!', people_path %></p>
+  <% person = @people.sample %>
+  <div>
+    <%= image_tag person.photo, alt: "alttext" %>
+    <p><%= person.first_name %> <%= person.last_name %></p>
+  </div>
 </div>
