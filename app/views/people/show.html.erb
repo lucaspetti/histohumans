@@ -3,5 +3,5 @@
   <%= image_tag @person.photo, alt: "alttext", class: 'person-photo' %>
   <h4><%= @person.birthdate %> - <%= @person.death %></h4>
   <p><%= @person.bio %></p>
-  <p><%= link_to 'Back', people_path %></p>
+  <%= render 'components/index' %>
 </div>

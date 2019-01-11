@@ -1,11 +1,19 @@
+.index-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .people-list {
+  width: 70%;
   margin: 3em;
   padding: 4em;
-  width: 100%;
+  // width: 100%;
   background-color: lightgrey;
   border-radius: 10px;
 
   ul {
+    color: darkblue;
     list-style: none;
   }
 
