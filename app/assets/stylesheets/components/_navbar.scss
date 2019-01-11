@@ -8,11 +8,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  h3 {
+    font-weight: bolder;
+  }
+  .fa-landmark {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* Logo */
 .navbar-wagon-brand img {
-  height: 50px;
+  height: 70px;
+  color: black;
 }
 
 /* User Avatar */
