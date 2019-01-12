@@ -4,5 +4,7 @@
   <%= image_tag @person.photo, alt: "alttext", class: 'person-photo' %>
   <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
   <p><%= @person.bio %></p>
+  <%= link_to "", "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
+              class: 'fab fa-wikipedia-w' %>
   <%= render 'components/index-link' %>
 </div>
