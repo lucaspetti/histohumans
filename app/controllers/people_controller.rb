@@ -1,6 +1,7 @@
 class PeopleController < ApplicationController
   def index
     @people = Person.all
+    @countries = Country.all
   end
 
   def show
