@@ -2,7 +2,7 @@
 <div class="container text-center">
   <h2><%= @person.first_name %> <%= @person.last_name %></h2>
   <%= image_tag @person.photo, alt: "alttext", class: 'person-photo' %>
-  <h4><%= @person.birthdate %> - <%= @person.death %></h4>
+  <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
   <p><%= @person.bio %></p>
   <%= render 'components/index-link' %>
 </div>
