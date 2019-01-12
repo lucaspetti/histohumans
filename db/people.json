@@ -58,5 +58,25 @@
     "death": "-0348-01-01",
     "country": "Greece",
     "bio": "Plato was a philosopher in Classical Greece and the founder of the Academy in Athens, the first institution of higher learning in the Western world. He is widely considered the pivotal figure in the development of Western philosophy. Unlike nearly all of his philosophical contemporaries, Plato's entire work is believed to have survived intact for over 2,400 years."
+  },
+  {
+    "first_name": "Nelson",
+    "last_name": "Mandela",
+    "occupation": "Politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Nelson_Mandela-2008_%28edit%29.jpg/220px-Nelson_Mandela-2008_%28edit%29.jpg",
+    "birthdate": "1918-07-18",
+    "death": "2013-12-05",
+    "country": "South Africa",
+    "bio": "Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election."
+  },
+  {
+    "first_name": "Barack",
+    "last_name": "Obama",
+    "occupation": "Attorney and Politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg",
+    "birthdate": "1961-08-04",
+    "death": "",
+    "country": "United States",
+    "bio": "Barack Hussein Obama II is an American attorney and politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American to be elected to the presidency. He previously served as a Senator from Illinois from 2005 to 2008"
   }
 ]
