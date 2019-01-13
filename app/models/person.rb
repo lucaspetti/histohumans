@@ -6,4 +6,8 @@ class Person < ApplicationRecord
 
   validates :birthdate, presence: true
   validates :bio, presence: true
+
+  def self.sample
+    Person.all.sample
+  end
 end

@@ -3,10 +3,9 @@
     <div class="person-card">
       <h1>Histohumans</h1>
       <p>Check out <%= link_to 'historical characters!', people_path %></p>
-      <% person = @people.sample %>
       <div>
-        <%= image_tag person.photo, alt: "alttext", class: 'person-image' %>
-        <p><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></p>
+        <%= image_tag @person.photo, alt: "alttext", class: 'person-image' %>
+        <p><%= link_to "#{@person.first_name} #{@person.last_name}", person_path(@person) %></p>
       </div>
     </div>
   </div>
