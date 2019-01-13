@@ -1,12 +1,5 @@
 <%= render 'components/navbar' %>
 <div class="container text-center index-div">
-  <div class="people-list">
-    <% @people.each do |person| %>
-      <ul>
-        <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
-      </ul>
-    <% end %>
-  </div>
   <div class="countries-list text-center">
     <% @countries.each do |country| %>
       <% if country.people? %>

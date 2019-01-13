@@ -24,5 +24,4 @@ class PeopleController < ApplicationController
   end
 
   # private
-
 end
