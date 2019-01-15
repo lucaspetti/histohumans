@@ -78,5 +78,35 @@
     "death": "",
     "country": "United States",
     "bio": "Barack Hussein Obama II is an American attorney and politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American to be elected to the presidency. He previously served as a Senator from Illinois from 2005 to 2008"
+  },
+  {
+    "first_name": "Tiradentes",
+    "last_name": "",
+    "occupation": "Dentist and Activist",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Oscar_Pereira_da_Silva_-_Retrato_de_Joaquim_Jos%C3%A9_da_Silva_Xavier_-_Tiradentes%2C_Acervo_do_Museu_Paulista_da_USP.jpg/220px-Oscar_Pereira_da_Silva_-_Retrato_de_Joaquim_Jos%C3%A9_da_Silva_Xavier_-_Tiradentes%2C_Acervo_do_Museu_Paulista_da_USP.jpg",
+    "birthdate": "1746-11-12",
+    "death": "1792-04-21",
+    "country": "Brazil",
+    "bio": "Joaquim José da Silva Xavier, known as Tiradentes, was a leading member of the Brazilian revolutionary movement known as Inconfidência Mineira, whose aim was full independence from Portuguese colonial power and creation of a Brazilian republic."
+  },
+  {
+    "first_name": "Pedro II of Brazil",
+    "last_name": "",
+    "occupation": "Monarch",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pedro_II_circa_1887b_transparent.png/220px-Pedro_II_circa_1887b_transparent.png",
+    "birthdate": "1825-12-02",
+    "death": "1891-12-05",
+    "country": "Brazil",
+    "bio": "Dom Pedro II, nicknamed \"the Magnanimous\", was the second and last monarch of the Empire of Brazil, reigning for over 58 years. He was born in Rio de Janeiro, the seventh child of Emperor Dom Pedro I of Brazil and Empress Dona Maria Leopoldina and thus a member of the Brazilian branch of the House of Braganza. His father's abrupt abdication and departure to Europe in 1831 left the five year-old as Emperor and led to a grim and lonely childhood and adolescence, obliged to spend his time studying in preparation for rule. He knew only brief moments of happiness and encountered few friends of his age. His experiences with court intrigues and political disputes during this period greatly affected his later character; he grew into a man with a strong sense of duty and devotion toward his country and his people, yet increasingly resentful of his role as monarch."
+  },
+  {
+    "first_name": "Mao",
+    "last_name": "Zedong",
+    "occupation": "Politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mao_Zedong_1963_%28cropped%29.jpg/220px-Mao_Zedong_1963_%28cropped%29.jpg",
+    "birthdate": "1893-12-26",
+    "death": "1976-09-09",
+    "country": "China",
+    "bio": "Mao Zedong, also known as Chairman Mao, was a Chinese communist revolutionary who became the founding father of the People's Republic of China, which he ruled as the Chairman of the Communist Party of China from its establishment in 1949 until his death in 1976. His theories, military strategies, and political policies are collectively known as Maoism."
   }
 ]
