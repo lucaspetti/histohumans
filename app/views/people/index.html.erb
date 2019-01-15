@@ -1,10 +1,13 @@
 <%= render 'components/navbar' %>
 <div class="container text-center index-div">
+  <div id="map-div">
+    <%= render 'components/map' %>
+  </div>
   <div class="countries-list text-center">
     <% @countries.each do |country| %>
       <% if country.people? %>
         <ul>
-          <li><%= country.name %></li>
+          <li class="country-name"><%= country.name %></li>
           <% country.histohumans.each do |person| %>
             <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
           <% end %>
@@ -13,3 +16,4 @@
     <% end %>
   </div>
 </div>
+<%= render 'components/countries-query' %>
