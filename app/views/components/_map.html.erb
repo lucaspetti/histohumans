@@ -49,7 +49,6 @@ function selectCountry(country) {
   selected.dataset.country = country;
   selected.innerHTML = country;
 
-  // ITERATION IS NOT WORKING
   countries.forEach(function (c) {
     if (c.innerText.startsWith(country)) {
       selected.innerHTML = c.innerHTML;
