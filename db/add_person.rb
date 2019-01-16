@@ -10,6 +10,9 @@ last_name = gets.chomp
 
 page = Wikipedia.find("#{first_name}_#{last_name}") || ""
 
+dates = page.content[/(\W(\d{4})\W(\d{2})\W(\d{2})){2}/].gsub('|', '-').split(/(\d{4})\W(\d{2})\W(\d{2})/) || " "
+
+
 puts 'Country:'
 country_name = gets.chomp
 
@@ -20,10 +23,11 @@ puts 'Image URL:'
 img_url = page.main_image_url || gets.chomp
 
 puts 'Birthdate (pass as 1789-07-10):'
-birthdate = gets.chomp
+birthdate = "#{alldates[5]}-#{alldates[6]}-#{alldates[7]}" || gets.chomp
+
 # Date needs to be passed as 1789-07-10
 puts 'Death: (Leave blank if person is alive)'
-death = gets.chomp
+death = "#{alldates[1]}-#{alldates[2]}-#{alldates[3]}" || gets.chomp
 death = Date.parse(death) unless death.empty?
 
 puts 'Give a short bio (can be edited later):'
