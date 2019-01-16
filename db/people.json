@@ -218,5 +218,25 @@
     "death": "1830-12-17",
     "country": "Venezuela",
     "bio": "Simón José Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco, generally known as Simón Bolívar and also colloquially as El Libertador, was a Venezuelan military and political leader who liberated from the Spanish Empire what are currently the republics of Venezuela, Bolivia, Colombia, Ecuador, Peru and Panama."
+  },
+  {
+    "first_name": "Gengis",
+    "last_name": "Khan",
+    "occupation": "Emperor",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/220px-YuanEmperorAlbumGenghisPortrait.jpg",
+    "birthdate": "1162-01-01",
+    "death": "1227-08-18",
+    "country": "Mongolia",
+    "bio": "Genghis Khan was the founder and first Great Khan of the Mongol Empire, which became the largest contiguous empire in history after his death. He came to power by uniting many of the nomadic tribes of Northeast Asia. After founding the Empire and being proclaimed \"Genghis Khan\", he launched the Mongol invasions that conquered most of Eurasia. Campaigns initiated in his lifetime include those against the Qara Khitai, Caucasus, and Khwarazmian, Western Xia and Jin dynasties. These campaigns were often accompanied by large-scale massacres of the civilian populations – especially in the Khwarazmian and Western Xia controlled lands. By the end of his life, the Mongol Empire occupied a substantial portion of Central Asia and China."
+  },
+  {
+    "first_name": "Attila",
+    "last_name": "",
+    "occupation": "Emperor",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Attila_%C3%A1br%C3%A1zol%C3%A1s_Wilhelm_Dilich_Ungarische_Chronica.jpg/220px-Attila_%C3%A1br%C3%A1zol%C3%A1s_Wilhelm_Dilich_Ungarische_Chronica.jpg",
+    "birthdate": "0406-01-01",
+    "death": "0452-03-01",
+    "country": "Hungary",
+    "bio": "Attila, frequently called Attila the Hun, was the ruler of the Huns from 434 until his death in March 453. He was also the leader of a tribal empire consisting of Huns, Ostrogoths, and Alans among others, in Central and Eastern Europe."
   }
 ]
