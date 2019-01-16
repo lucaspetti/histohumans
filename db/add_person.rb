@@ -12,7 +12,7 @@ page = Wikipedia.find("#{first_name}_#{last_name}") || ""
 
 if page.content
   puts "Found on Wikipedia"
-  dates = page.content[/(\W(\d{4})\W(\d{2})\W(\d{1,2})){2}/].split('|') || " "
+  dates = page.content[/(\W(\d{4})\W(\d{1,2})\W(\d{1,2})){2}/].split('|') || " "
 end
 
 
