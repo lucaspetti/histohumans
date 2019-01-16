@@ -148,5 +148,25 @@
     "death": "1901-01-22",
     "country": "United Kingdom",
     "bio": "Victoria was Queen of the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death. On 1 May 1876, she adopted the additional title of Empress of India. Her reign of 63 years and seven months was longer than that of any of her predecessors and is known as the Victorian era."
+  },
+  {
+    "first_name": "Wilhelm",
+    "last_name": "II",
+    "occupation": "Emperor",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kaiser_Wilhelm_II_of_Germany_-_1902.jpg/220px-Kaiser_Wilhelm_II_of_Germany_-_1902.jpg",
+    "birthdate": "1859-01-27",
+    "death": "1941-06-04",
+    "country": "Germany",
+    "bio": "Wilhelm II was the last German Emperor (Kaiser) and King of Prussia, reigning from 15 June 1888 until his abdication on 9 November 1918. He was the eldest grandchild of Queen Victoria of the United Kingdom and related to many monarchs and princes of Europe, most notably, King George V of the United Kingdom and Emperor Nicholas II of Russia."
+  },
+  {
+    "first_name": "Martin",
+    "last_name": "Luther",
+    "occupation": "Priest",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Martin_Luther_by_Cranach-restoration.jpg/220px-Martin_Luther_by_Cranach-restoration.jpg",
+    "birthdate": "1483-11-10",
+    "death": "1546-02-18",
+    "country": "Germany",
+    "bio": "Martin Luther was a German professor of theology, composer, priest, monk, and a seminal figure in the Protestant Reformation."
   }
 ]
