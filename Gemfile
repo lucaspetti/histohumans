@@ -18,6 +18,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'fastimage'
 gem 'date'
+gem 'wikipedia-client'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
