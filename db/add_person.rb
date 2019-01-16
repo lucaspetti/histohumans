@@ -1,11 +1,14 @@
 require 'json'
 require 'date'
+require 'wikipedia'
 
 puts 'First name:'
 first_name = gets.chomp
 
 puts 'Last name:'
 last_name = gets.chomp
+
+page = Wikipedia.find("#{first_name}_#{last_name}") || ""
 
 puts 'Country:'
 country_name = gets.chomp
@@ -14,7 +17,7 @@ puts 'Occupation:'
 occupation = gets.chomp
 
 puts 'Image URL:'
-img_url = gets.chomp
+img_url = page.main_image_url || gets.chomp
 
 puts 'Birthdate (pass as 1789-07-10):'
 birthdate = gets.chomp
@@ -24,7 +27,7 @@ death = gets.chomp
 death = Date.parse(death) unless death.empty?
 
 puts 'Give a short bio (can be edited later):'
-bio = gets.chomp
+bio = page.summary || gets.chomp
 
 person_hash = { first_name: first_name,
                 last_name: last_name,
