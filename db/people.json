@@ -108,5 +108,45 @@
     "death": "1976-09-09",
     "country": "China",
     "bio": "Mao Zedong, also known as Chairman Mao, was a Chinese communist revolutionary who became the founding father of the People's Republic of China, which he ruled as the Chairman of the Communist Party of China from its establishment in 1949 until his death in 1976. His theories, military strategies, and political policies are collectively known as Maoism."
+  },
+  {
+    "first_name": "Confucius",
+    "last_name": "",
+    "occupation": "Philosopher and politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/220px-Confucius_Tang_Dynasty.jpg",
+    "birthdate": "-0551-01-01",
+    "death": "-0479-01-01",
+    "country": "China",
+    "bio": "Confucius was a Chinese teacher, editor, politician, and philosopher of the Spring and Autumn period of Chinese history."
+  },
+  {
+    "first_name": "Maximilien",
+    "last_name": "de Robespierre",
+    "occupation": "Lawyer and politician",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Robespierre.jpg/220px-Robespierre.jpg",
+    "birthdate": "1758-05-06",
+    "death": "1794-07-28",
+    "country": "France",
+    "bio": "Maximilien François Marie Isidore de Robespierre was a French lawyer and politician, as well as one of the best known and most influential figures associated with the French Revolution and the Reign of Terror. As a member of the Estates-General, the Constituent Assembly and the Jacobin Club, Robespierre was an outspoken advocate for the poor and for democratic institutions. He campaigned for universal male suffrage in France, price controls on basic food commodities and the abolition of slavery in the French colonies. He was an ardent opponent of the death penalty, but played an important role in arranging the execution of many political opponents, and of King Louis XVI, which led to the establishment of a French Republic."
+  },
+  {
+    "first_name": "Jean-Jacques",
+    "last_name": "Rousseau",
+    "occupation": "Philosopher and writer",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg/220px-Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg",
+    "birthdate": "1712-06-28",
+    "death": "1778-07-02",
+    "country": "Switzerland",
+    "bio": "Jean-Jacques Rousseau was a Genevan philosopher, writer and composer. Born in Geneva, his political philosophy influenced the progress of the Enlightenment throughout Europe, as well as aspects of the French Revolution and the development of modern political and educational thought."
+  },
+  {
+    "first_name": "Queen",
+    "last_name": "Victoria",
+    "occupation": "Queen",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Queen_Victoria_by_Bassano.jpg/220px-Queen_Victoria_by_Bassano.jpg",
+    "birthdate": "1819-05-24",
+    "death": "1901-01-22",
+    "country": "United Kingdom",
+    "bio": "Victoria was Queen of the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death. On 1 May 1876, she adopted the additional title of Empress of India. Her reign of 63 years and seven months was longer than that of any of her predecessors and is known as the Victorian era."
   }
 ]
