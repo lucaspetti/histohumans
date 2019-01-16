@@ -7,16 +7,12 @@
     ""
 
   "France:"
-    "Voltaire"
     "Charles DeGaulle"
 
   "GERMANY:"
-    "Karl Marx"
     "Rosa Luxemburg"
 
   "Greece:"
-    "Socrates"
-    "Aristotle"
 
   "ITALY:"
     "Marco Polo"
@@ -25,12 +21,23 @@
   "Mexico:"
     "Emiliano Zapata"
 
+  "Portugal:"
+    "Pedro Alvares Cabral"
+    "Dom Sebastiao"
+    "Vasco da Gama"
+
   "Russia:"
     "Joseph Stalin"
     "Leon Trotsky"
     "Lenin"
     "Rasputin"
     "Peter the Great"
+
+  "Spain:"
+    "Miguel de Cervantes"
+    "Alfonso X"
+    "Hernan Cortez"
+    "Francisco Pizarro"
 
   "United Kingdom:"
     "Winston Churchill"
