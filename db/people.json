@@ -168,5 +168,15 @@
     "death": "1546-02-18",
     "country": "Germany",
     "bio": "Martin Luther was a German professor of theology, composer, priest, monk, and a seminal figure in the Protestant Reformation."
+  },
+  {
+    "first_name": "Voltaire",
+    "last_name": "",
+    "occupation": "Philosopher",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png/220px-Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png",
+    "birthdate": "1694-11-21",
+    "death": "1778-05-30",
+    "country": "France",
+    "bio": "François-Marie Arouet, known by his nom de plume Voltaire, was a French Enlightenment writer, historian and philosopher famous for his wit, his criticism of Christianity, especially the Roman Catholic Church, and his advocacy of freedom of religion, freedom of speech, and separation of church and state."
   }
 ]
