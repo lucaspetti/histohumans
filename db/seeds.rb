@@ -1,7 +1,7 @@
 puts "Adding countries..."
-countries = JSON.parse(File.read("db/countries.json"))
+# countries = JSON.parse(File.read("db/countries.json"))
 
-array = countries.each { |country| Country.create!(country) unless Country.find_by(name: country["name"]) }
+# array = countries.each { |country| Country.create!(country) unless Country.find_by(name: country["name"]) }
 
 puts "Countries added. Adding people..."
 
