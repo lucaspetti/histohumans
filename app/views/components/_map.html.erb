@@ -47,11 +47,11 @@ function selectCountry(country, code) {
   const countries = document.querySelectorAll('ul');
   const selected = document.getElementById("selected");
   selected.dataset.country = country;
-  selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png'></li> ${country} `;
+  selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${country} `;
 
   countries.forEach(function (c) {
     if (c.innerText.startsWith(country)) {
-      selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png'></li> ${c.innerHTML}`;
+      selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${c.innerHTML}`;
     }
   });
 }
