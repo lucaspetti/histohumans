@@ -228,7 +228,7 @@
   { "continent": "Europe", "name": "Ukraine", "code": "UA" },
   { "continent": "Asia", "name": "United Arab Emirates", "code": "AE" },
   { "continent": "Europe", "name": "United Kingdom", "code": "GB" },
-  { "continent": "North America", "name": "United States", "period": "1776 - present" },
+  { "continent": "North America", "name": "United States", "period": "1776 - present", "code": "US" },
   { "name": "United States Minor Outlying Islands", "code": "UM" },
   { "continent": "South America", "name": "Uruguay", "code": "UY" },
   { "continent": "Asia", "name": "Uzbekistan", "code": "UZ" },
