@@ -5,4 +5,4 @@
 Ruby version:
 2.4.5
 
-### Using wikipedia-client API and AmCharts map
+### Currently using wikipedia-client API, AmCharts map & Country Flags API
