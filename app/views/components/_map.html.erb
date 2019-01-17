@@ -37,22 +37,21 @@ var map = AmCharts.makeChart("chartdiv", {
       area.showAsSelected = false;
 
       // Update the name
-      selectCountry(e.mapObject.enTitle);
+      selectCountry(e.mapObject.enTitle, e.mapObject.id);
     }
   }]
 });
 
-function selectCountry(country) {
+function selectCountry(country, code) {
 
   const countries = document.querySelectorAll('ul');
   const selected = document.getElementById("selected");
   selected.dataset.country = country;
-  selected.innerHTML = country;
+  selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png'></li> ${country} `;
 
   countries.forEach(function (c) {
     if (c.innerText.startsWith(country)) {
-      selected.innerHTML = c.innerHTML;
-      console.log('Not else statement');
+      selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png'></li> ${c.innerHTML}`;
     }
   });
 }
