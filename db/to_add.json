@@ -2,9 +2,15 @@
   "Argentina:"
     "Kirchner"
 
+  "Austria:"
+    "Mozart"
+
   "Brazil:"
     "Dom Pedro I"
     "Santos Dumont"
+
+  "Cambodia:"
+    "Red Cmer"
 
   "Chile:"
     "Pablo Neruda"
@@ -15,19 +21,42 @@
   "Colombia:"
     "Gabriel Garcia Marquez"
 
+  "Egypt:"
+    "Ramses"
+    "Cleopatra"
+
   "France:"
     "Charles DeGaulle"
+    "Charle Magne"
+    "Eleanor of Aquitaine"
 
   "GERMANY:"
     "Rosa Luxemburg"
 
   "Greece:"
 
+  "India:"
+    "Ashoka"
+    "Sri Krishna"
+
+  "Iraq:"
+    "Saladin"
+
   "ITALY:"
     "Marco Polo"
     "Benito Mussolini"
+    "Julius Caesar"
+
+  "North Korea:"
+    "Kim Jong Il"
+
+  "Liberia:"
+    "George Weah"
 
   "Mexico:"
+
+  "Pakistan:"
+    "Guru Nanak"
 
   "Portugal:"
     "Pedro Alvares Cabral"
@@ -45,6 +74,13 @@
     "Hernan Cortez"
     "Francisco Pizarro"
 
+  "Swaziland:"
+    "Mswati II"
+
+  "Turkey:"
+    "Ottoman"
+    "Attaturk"
+
   "United Kingdom:"
     "Winston Churchill"
     "Henry VIII"
@@ -54,6 +90,9 @@
     "Dwight Eisenhower"
     "Martin Luther King"
     "Malcolm X"
+
+  "Uzbekistan:"
+    "Babur"
 
   "Vietnam:"
 ]
