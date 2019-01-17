@@ -4,3 +4,5 @@
 
 Ruby version:
 2.4.5
+
+### Using wikipedia-client API and AmCharts map
