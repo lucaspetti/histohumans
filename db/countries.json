@@ -102,6 +102,7 @@
   { "continent": "Asia", "name": "India", "code": "IN" },
   { "continent": "Asia", "name": "Indonesia", "code": "ID" },
   { "continent": "Asia", "name": "Iran, Islamic Republic Of", "code": "IR" },
+  { "continent": "Asia", "name": "Iran", "code": "IR" },
   { "continent": "Asia", "name": "Iraq", "code": "IQ" },
   { "continent": "Europe", "name": "Ireland", "code": "IE" },
   { "name": "Isle of Man", "code": "IM" },

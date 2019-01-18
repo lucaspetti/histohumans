@@ -14,10 +14,10 @@ countries = JSON.parse(File.read("db/countries.json"))
 array = countries.each { |country| Country.create!(country) unless Country.find_by(name: country["name"]) }
 countries.each do |country|
   c = Country.find_by(name: country["name"])
-  puts "#{c.name} is in #{country['continent']} actual continent_id is #{c.continent_id}"
+  # puts "#{c.name} is in #{country['continent']} actual continent_id is #{c.continent_id}"
   if country["continent"]
     c.continent_id = Continent.find_by(name: country["continent"]).id
-    puts "#{c.continent_id}"
+    # puts "#{c.continent_id}"
     c.save!
   end
 end
