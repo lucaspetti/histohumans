@@ -29,11 +29,16 @@
   background-color: white;
   border-radius: 10px;
 
+  .continent-link {
+
+  }
+
   ul {
     color: darkblue;
     list-style: none;
     margin-left: 0;
     padding: 0;
+    display: none;
   }
 }
 
