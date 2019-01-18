@@ -4,14 +4,17 @@
     <%= render 'components/map' %>
   </div>
   <div class="countries-list text-center">
-    <% @countries.each do |country| %>
-      <% if country.people? %>
-        <ul>
-          <li class="country-name"><%= country.name %></li>
-          <% country.histohumans.each do |person| %>
-            <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
-          <% end %>
-        </ul>
+    <% @continents.each do |continent| %>
+      <h3><%= continent.name unless continent.name == 'Antarctica' %></h3>
+      <% continent.countries.each do |country| %>
+        <% if country.people? %>
+          <ul>
+            <li class="country-name"><%= country.name %></li>
+            <% country.histohumans.each do |person| %>
+              <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
+            <% end %>
+          </ul>
+        <% end %>
       <% end %>
     <% end %>
   </div>

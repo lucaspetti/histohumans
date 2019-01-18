@@ -2,6 +2,7 @@ class PeopleController < ApplicationController
   def index
     @people = Person.all
     @countries = Country.all
+    @continents = Continent.all
   end
 
   def show

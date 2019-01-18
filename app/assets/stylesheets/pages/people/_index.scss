@@ -15,10 +15,11 @@
   background-color: white;
   border-radius: 10px;
 
-  ul {
-    color: darkblue;
-    list-style: none;
-  }
+  // ul {
+  //   color: darkblue;
+  //   list-style: none;
+  //   margin-left: 0;
+  // }
 }
 
 .countries-list {
@@ -32,6 +33,7 @@
     color: darkblue;
     list-style: none;
     margin-left: 0;
+    padding: 0;
   }
 }
 
