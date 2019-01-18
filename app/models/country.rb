@@ -1,6 +1,7 @@
 class Country < ApplicationRecord
   has_many :people
   has_many :maps
+  belongs_to :continent
 
   validates :name, presence: true
 
