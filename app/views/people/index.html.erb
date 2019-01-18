@@ -6,7 +6,7 @@
   <div class="countries-list text-center">
     <% @continents.each do |continent| %>
       <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
-      <% continent.countries.each do |country| %>
+      <% continent.countries.sort.each do |country| %>
         <% if country.people? %>
           <ul class="<%= "#{continent.name}" %> hidden">
             <li class="country-name"><%= country.name %></li>
