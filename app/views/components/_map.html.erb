@@ -44,16 +44,45 @@ var map = AmCharts.makeChart("chartdiv", {
 
 function selectCountry(country, code) {
 
-  const countries = document.querySelectorAll('ul');
+  var countries = [];
+  var people = [];
+  console.log(countries[0]);
+  console.log(people[0]);
+  getCountries();
+  getPeople();
+
+  function getCountries (){
+  fetch(`https://raw.githubusercontent.com/lucaspetti/histohumans/master/db/countries.json`)
+    .then(response => response.json())
+    .then((data) => {
+      data.forEach(function (element) {
+        countries.push(element);
+      });
+    });
+  }
+
+
+  function getPeople (){
+  fetch(`https://raw.githubusercontent.com/lucaspetti/histohumans/master/db/people.json`)
+    .then(response => response.json())
+    .then((data) => {
+      data.forEach(function (element) {
+        people.push(element);
+      });
+    });
+  }
+
+  console.log(countries);
+  console.log(people);
+
   const selected = document.getElementById("selected");
-  selected.dataset.country = country;
   selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${country} `;
 
-  countries.forEach(function (c) {
-    if (c.innerText.startsWith(country)) {
-      selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${c.innerHTML}`;
-    }
-  });
+  // countries.forEach(function (c) {
+  //   if (c.innerText.startsWith(country)) {
+  //     selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${c.innerHTML}`;
+  //   }
+  // });
 }
 
 </script>
