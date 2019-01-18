@@ -1,4 +1,7 @@
 [
+  "SRC one: https://www.quora.com/What-is-the-name-of-the-most-famous-person-from-every-country-in-the-world"
+  "SRC two: https://en.wikipedia.org/wiki/Lists_of_people_by_nationality"
+
   "Argentina:"
     "Kirchner"
 
@@ -22,8 +25,6 @@
     "Gabriel Garcia Marquez"
 
   "Egypt:"
-    "Ramses"
-    "Cleopatra"
 
   "France:"
     "Charles DeGaulle"
@@ -33,11 +34,16 @@
   "GERMANY:"
     "Rosa Luxemburg"
 
+  "Ghana:"
+    "Kofi Annan"
+
   "Greece:"
 
   "India:"
     "Ashoka"
     "Sri Krishna"
+
+  "Iran: Avicenna, Reza Pahlavi, Cyrus, Zoroaster, Bahaullah"
 
   "Iraq:"
 
@@ -57,6 +63,9 @@
   "Pakistan:"
     "Guru Nanak"
 
+  "Poland:"
+    "Marie Curie"
+
   "Portugal:"
     "Pedro Alvares Cabral"
 
@@ -65,6 +74,9 @@
     "Rasputin"
     "Peter the Great"
 
+  "Saudi Arabia:"
+    "Muhammad"
+
   "Spain:"
     "Miguel de Cervantes"
     "Alfonso X"
@@ -72,7 +84,6 @@
     "Francisco Pizarro"
 
   "Swaziland:"
-    "Mswati II"
 
   "Turkey:"
     "Ottoman"
@@ -83,6 +94,7 @@
     "Henry VIII"
 
   "US:"
+    "George Washington"
     "Andrew Johnson"
     "Dwight Eisenhower"
     "Martin Luther King"
