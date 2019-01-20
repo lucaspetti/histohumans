@@ -13,8 +13,10 @@ countries = JSON.parse(File.read("db/countries.json"))
 
 array = countries.each do |country|
   unless Country.find_by(name: country["name"])
-    country["continent"] = Continent.find_by(name: country["continent"]) if country["continent"]
-    c = Country.create!(country)
+    if country["continent"]
+      country["continent"] = Continent.find_by(name: country["continent"])
+      c = Country.create!(country)
+    end
   end
 end
 
