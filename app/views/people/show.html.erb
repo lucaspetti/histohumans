@@ -10,10 +10,4 @@
   <%= render 'components/index-link' %>
 </div>
 
-<script>
-  const img = document.querySelector('.person-image');
-  const flag = document.querySelector('.country-flag');
-
-  img.src = img.dataset.url;
-  flag.src = flag.dataset.url;
-</script>
+<%= javascript_pack_tag 'show-page-images' %>
