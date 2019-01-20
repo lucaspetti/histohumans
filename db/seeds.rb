@@ -26,6 +26,7 @@ people = JSON.parse(File.read("db/people.json"))
 
 people.each do |person|
   person["country"] = Country.find_by(name: person["country"])
+  person["photo"] = open(person["photo"])
   pe = Person.create!(person) unless Person.find_by(photo: person["photo"])
 end
 
