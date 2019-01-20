@@ -1,12 +1,12 @@
-# puts "Adding Continents..."
+puts "Adding Continents..."
 
-# Continent.create!(name: 'North America')
-# Continent.create!(name: 'South America')
-# Continent.create!(name: 'Africa')
-# Continent.create!(name: 'Asia')
-# Continent.create!(name: 'Europe')
-# Continent.create!(name: 'Oceania')
-# Continent.create!(name: 'Antarctica')
+Continent.create!(name: 'North America')
+Continent.create!(name: 'South America')
+Continent.create!(name: 'Africa')
+Continent.create!(name: 'Asia')
+Continent.create!(name: 'Europe')
+Continent.create!(name: 'Oceania')
+Continent.create!(name: 'Antarctica')
 
 puts "Adding countries..."
 countries = JSON.parse(File.read("db/countries.json"))
