@@ -4,10 +4,20 @@
       <h1>Histohumans</h1>
       <p>Check out <%= link_to 'historical characters!', people_path %></p>
       <div>
-        <%= image_tag @person.photo, alt: "alttext", class: 'person-image' %>
+        <img src="" alt="histohuman-photo" class="person-image" data-url=<%= @person.photo %> >
+        <!-- <%= image_tag @person.photo, alt: "alttext", class: 'person-image' %>  -->
         <p><%= link_to "#{@person.first_name} #{@person.last_name}", person_path(@person) %></p>
-        <%= image_tag @person.country.flag, alt: "flag", class: 'country-flag' %>
+        <img src="" alt="country-flag" class="country-flag" data-url=<%= @person.country.flag %> >
+        <!-- <%= image_tag @person.country.flag, alt: "flag", class: 'country-flag' %>  -->
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  const img = document.querySelector('.person-image');
+  const flag = document.querySelector('.country-flag');
+
+  img.src = img.dataset.url;
+  flag.src = flag.dataset.url;
+</script>
