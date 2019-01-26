@@ -127,6 +127,7 @@
   { "continent": "Africa", "name": "Lesotho", "code": "LS" },
   { "continent": "Africa", "name": "Liberia", "code": "LR" },
   { "continent": "Africa", "name": "Libyan Arab Jamahiriya", "code": "LY" },
+  { "continent": "Africa", "name": "Libya", "code": "LY" },
   { "continent": "Europe", "name": "Liechtenstein", "code": "LI" },
   { "continent": "Europe", "name": "Lithuania", "code": "LT" },
   { "continent": "Europe", "name": "Luxembourg", "code": "LU" },
