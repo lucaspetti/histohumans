@@ -53,7 +53,7 @@
   { "continent": "North America", "name": "Costa Rica", "code": "CR" },
   { "continent": "Africa", "name": "Cote D\"Ivoire", "code": "CI" },
   { "continent": "Europe", "name": "Croatia", "code": "HR" },
-  { "continent": "North America", "name": "Cuba", "period": "1868 - present", "code:" "CU" },
+  { "continent": "North America", "name": "Cuba", "period": "1868 - present", "code": "CU" },
   { "continent": "Europe", "name": "Cyprus", "code": "CY" },
   { "continent": "Europe", "name": "Czech Republic", "code": "CZ" },
   { "continent": "Europe", "name": "Denmark", "code": "DK" },
