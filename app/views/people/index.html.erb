@@ -4,7 +4,7 @@
   <div id="map-div">
     <%= render 'components/map' %>
   </div>
-    <div class="continents-box">
+    <div class="continents-box border-shadow">
       <div class="continents-list text-center">
         <% @continents.each do |continent| %>
           <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
