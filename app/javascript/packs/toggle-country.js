@@ -1,5 +1,5 @@
 const continents = document.querySelectorAll('.continent-link');
-const countriesList = document.querySelector('.countries-list');
+const cardsList = document.querySelector('.cards-list');
 
 continents.forEach(function (continent) {
   continent.addEventListener('click', function(e) {
@@ -9,14 +9,14 @@ continents.forEach(function (continent) {
     const continentCountries = document.querySelectorAll(query);
     continentCountries.forEach(function (c) {
       c.classList.remove('hidden');
-      countriesList.appendChild(c);
+      cardsList.appendChild(c);
     })
   })
 })
 
 function hideCountries() {
-  if (countriesList.hasChildNodes()) {
-  var children = countriesList.childNodes;
+  if (cardsList.hasChildNodes()) {
+  var children = cardsList.childNodes;
   children.forEach(function (c) {
     c.classList.add('hidden');
     })

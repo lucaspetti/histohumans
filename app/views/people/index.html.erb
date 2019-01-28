@@ -10,18 +10,25 @@
           <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
           <% continent.countries.sort.each do |country| %>
             <% if country.people? %>
-              <ul class="<%= "#{continent.name}" %> hidden">
-                <li class="country-name"><%= country.name %></li>
-                <% country.histohumans.each do |person| %>
-                  <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
-                <% end %>
-              </ul>
+              <div class="<%= "#{continent.name}" %> hidden card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                <div class="card-description"><h2 class="country-name"><%= country.name %></h2></div>
+                <img class="card-flag" src="<%= country.flag %>">
+                <a class="card-link" href="#" ></a>
+                <div class="people-list">
+                  <ul class="<%= "#{country.name}-people" %>">
+                    <% country.histohumans.each do |person| %>
+                        <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
             <% end %>
           <% end %>
         <% end %>
       </div>
-      <div class="countries-list"></div>
+      <div class="countries-list cards-list"></div>
     </div>
 </div>
 
 <%= javascript_pack_tag 'toggle-country' %>
+<%= javascript_pack_tag 'toggle-people' %>
