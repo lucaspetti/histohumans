@@ -1,23 +1,27 @@
 <%= render 'components/navbar' %>
 <div class="container text-center index-div">
+  <h2>Search within the map or by Continent:</h2>
   <div id="map-div">
     <%= render 'components/map' %>
   </div>
-  <div class="countries-list text-center">
-    <% @continents.each do |continent| %>
-      <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
-      <% continent.countries.sort.each do |country| %>
-        <% if country.people? %>
-          <ul class="<%= "#{continent.name}" %> hidden">
-            <li class="country-name"><%= country.name %></li>
-            <% country.histohumans.each do |person| %>
-              <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
+    <div class="continents-box">
+      <div class="continents-list text-center">
+        <% @continents.each do |continent| %>
+          <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
+          <% continent.countries.sort.each do |country| %>
+            <% if country.people? %>
+              <ul class="<%= "#{continent.name}" %> hidden">
+                <li class="country-name"><%= country.name %></li>
+                <% country.histohumans.each do |person| %>
+                  <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
+                <% end %>
+              </ul>
             <% end %>
-          </ul>
+          <% end %>
         <% end %>
-      <% end %>
-    <% end %>
-  </div>
+      </div>
+      <div class="countries-list"></div>
+    </div>
 </div>
 
 <%= javascript_pack_tag 'toggle-country' %>
