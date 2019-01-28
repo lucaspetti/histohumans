@@ -1,6 +1,7 @@
 <%= render 'components/navbar' %>
 <div class="container text-center index-div">
   <h2>Search within the map or by Continent:</h2>
+  <p>Just click on the country to display the characters</p>
   <div id="map-div">
     <%= render 'components/map' %>
   </div>
@@ -10,11 +11,13 @@
           <h3><%= link_to "#{continent.name}", "#", class: 'continent-link' unless continent.name == 'Antarctica' %></h3>
           <% continent.countries.sort.each do |country| %>
             <% if country.people? %>
-              <div class="<%= "#{continent.name}" %> hidden card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
-                <div class="card-description"><h2 class="country-name"><%= country.name %></h2></div>
-                <img class="card-flag" src="<%= country.flag %>">
-                <a class="card-link" href="#" ></a>
-                <div class="people-list">
+              <div class="<%= "#{continent.name}" %> hidden country-card">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                  <div class="card-description"><h2 class="country-name"><%= country.name %></h2></div>
+                  <img class="card-flag" src="<%= country.flag %>">
+                  <a class="card-link" href="#" ></a>
+                </div>
+                <div class="people-list hidden">
                   <ul class="<%= "#{country.name}-people" %>">
                     <% country.histohumans.each do |person| %>
                         <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>

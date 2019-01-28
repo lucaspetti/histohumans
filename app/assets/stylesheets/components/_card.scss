@@ -1,6 +1,6 @@
 .card {
   height: 175px;
-  width: 80%;
+  width: 100%;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -13,6 +13,16 @@
 
   }
 }
+
+.country-card {
+  width: 80%;
+
+  .people-list {
+    margin: 1em 2em;
+    width: 100%;
+  }
+}
+
 .card-flag {
   position: absolute;
   right: 10px;
