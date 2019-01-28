@@ -218,7 +218,7 @@
   { "continent": "Asia", "name": "Tajikistan", "code": "TJ" },
   { "continent": "Africa", "name": "Tanzania, United Republic of", "code": "TZ" },
   { "continent": "Asia", "name": "Thailand", "code": "TH" },
-  { "continent": "Africa", "name": "Timor-Leste", "code": "TL" },
+  { "continent": "Oceania", "name": "Timor-Leste", "code": "TL" },
   { "continent": "Africa", "name": "Togo", "code": "TG" },
   { "continent": "Oceania", "name": "Tokelau", "code": "TK" },
   { "continent": "Oceania", "name": "Tonga", "code": "TO" },
