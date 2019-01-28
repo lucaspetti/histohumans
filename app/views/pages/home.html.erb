@@ -1,8 +1,8 @@
 <div id="home">
   <div class="container text-center">
     <div class="person-card">
-      <h1>Histohumans</h1>
-      <p>Check out <%= link_to 'historical characters!', people_path %></p>
+      <h1 id="title">Histohumans</h1>
+      <p>Check out <%= link_to 'famous and historical characters!', people_path %></p>
       <div>
         <img src="" alt="histohuman-photo" class="person-image" data-url=<%= @person.photo %> >
         <p><%= link_to "#{@person.first_name} #{@person.last_name}", person_path(@person) %></p>
