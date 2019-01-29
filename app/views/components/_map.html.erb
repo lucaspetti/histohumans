@@ -67,6 +67,11 @@ function selectCountry(country, code) {
 
   function setPeople() {
     selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${country} `;
+    var card = document.getElementById(code);
+    console.log(card);
+    var content = card;
+    console.log(content);
+    selected.innerHTML = content.innerHTML;
     people.forEach(function (person) {
       selected.appendChild(person);
     });

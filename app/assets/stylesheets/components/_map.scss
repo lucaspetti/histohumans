@@ -17,13 +17,10 @@
   }
 
   #info {
-    // height: 1em;
     width: 70%;
     overflow: hidden;
     max-width: 1100px;
     margin: 10px auto;
-    padding: 5px 8px;
-    // color: white;
     background-color: white;
     border-radius: 10px;
   }
@@ -38,5 +35,12 @@
     color: darkblue;
     list-style: none;
     margin-left: 0;
+    .card {
+      width: 100%;
+      margin: 0;
+    }
+    li {
+      margin: 0.5em 0;
+    }
   }
 }
