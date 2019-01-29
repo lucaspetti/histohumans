@@ -44,40 +44,16 @@ var map = AmCharts.makeChart("chartdiv", {
 
 function selectCountry(country, code) {
 
-  var people = [];
   const selected = document.getElementById("selected");
-
-  function getPeople () {
-  fetch(`https://raw.githubusercontent.com/lucaspetti/histohumans/master/db/people.json`)
-    .then(response => response.json())
-    .then((data) => {
-      var n = 1;
-      data.forEach(function (element) {
-        if(element.country == country) {
-          var link = document.createElement('li');
-          var name = `<a href="people/${n}"> ${element.first_name} ${element.last_name}</a>`;
-          link.innerHTML = name;
-          people.push(link);
-        }
-        n += 1;
-      });
-      setPeople();
-    });
-  }
 
   function setPeople() {
     selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${country} `;
     var card = document.getElementById(code);
-    console.log(card);
-    var content = card;
-    console.log(content);
-    selected.innerHTML = content.innerHTML;
-    people.forEach(function (person) {
-      selected.appendChild(person);
-    });
+    selected.innerHTML = card.innerHTML;
+    selected.children[1].classList.remove('hidden');
   }
 
-  getPeople();
+  setPeople();
 }
 
 </script>
