@@ -12,7 +12,7 @@
           <% continent.countries.sort.each do |country| %>
             <% if country.people? %>
               <div class="<%= "#{continent.name}" %> hidden country-card">
-                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                <div class="card" style="background-image: linear-gradient(rgba(250,250,250,0.4), rgba(250,250,250,0.4)), url(<%= country.photo %>);">
                   <div class="card-description"><h2 class="country-name"><%= country.name %></h2></div>
                   <img class="card-flag" src="<%= country.flag %>">
                   <a class="card-link" href="#" ></a>
@@ -20,7 +20,10 @@
                 <div class="people-list hidden">
                   <ul class="<%= "#{country.name}-people" %>">
                     <% country.histohumans.each do |person| %>
-                        <li><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></li>
+                        <li class="person-line">
+                          <%= image_tag "#{person.photo}", alt: "alttext", class: "card-user" %>
+                          <%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %>
+                        </li>
                     <% end %>
                   </ul>
                 </div>
