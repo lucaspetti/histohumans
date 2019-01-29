@@ -9,10 +9,6 @@ class Country < ApplicationRecord
     true unless people.empty?
   end
 
-  def histohumans
-    Person.where(country: self)
-  end
-
   def self.empty_count
     s = 0
     Country.all.each { |c| s += 1 if c.people? }
