@@ -18,7 +18,7 @@
                   <a class="card-link" href="#" ></a>
                 </div>
                 <div class="people-list hidden">
-                  <ul class="<%= "#{country.name}-people" %>">
+                  <ul> <!-- class="<%= "#{country.name}-people" %>" -->
                     <% country.histohumans.each do |person| %>
                         <li class="person-line">
                           <%= image_tag "#{person.photo}", alt: "alttext", class: "card-user" %>
