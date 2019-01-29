@@ -50,6 +50,7 @@ function selectCountry(country, code) {
     selected.innerHTML = `<li><img src='https://www.countryflags.io/${code}/flat/64.png' class='c-flag'></li> ${country} `;
     var card = document.getElementById(code);
     selected.innerHTML = card.innerHTML;
+    selected.children[0].children[2].remove();
     selected.children[1].classList.remove('hidden');
   }
 

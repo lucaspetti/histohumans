@@ -1,120 +1,64 @@
 [
   "SRC one: https://www.quora.com/What-is-the-name-of-the-most-famous-person-from-every-country-in-the-world"
   "SRC two: https://en.wikipedia.org/wiki/Lists_of_people_by_nationality"
+  "SRC three: https://www.msafropolitan.com/2010/12/7-african-female-icons-that-shaped-history.html"
+  "SRC four: http://emeagwali.com/media/africa/100-greatest-africans-of-all-times.html"
 
-  "Argentina:"
-    "Kirchner"
-
-  "Austria:"
-    "Mozart"
-
+  "Angola - Queen Nzinga"
+  "Argentina - Kirchner"
+  "Austria - Mozart"
+  "Botswana - Ruth Williams, Lady Khama"
   "Bolivia"
-
-  "Brazil:"
-    "Dom Pedro I"
-    "Santos Dumont"
-
-  "Cambodia:"
-
-  "Chile:"
-    "Pablo Neruda"
-
-  "China:"
-    ""
-
-  "Colombia:"
-    "Gabriel Garcia Marquez"
-
+  "Brazil - Dom Pedro I, Santos Dumont"
+  "Burkina Faso"
+  "Cambodia"
+  "Cameroon"
+  "Chile - Pablo Neruda"
+  "China"
+  "Colombia - Gabriel Garcia Marquez"
+  "Democratic Republic of Congo - Patrice Lumumba"
   "Ecuador"
-
-  "Egypt:"
-
-  "France:"
-    "Charles DeGaulle"
-    "Charle Magne"
-    "Eleanor of Aquitaine"
-
-  "GERMANY:"
-    "Rosa Luxemburg"
-
-  "Ghana:"
-
-  "Greece:"
-
+  "Egypt - Gamal Abdel Nasser, Anwar Sadat"
+  "Ethiopia - Queen of Sheba"
+  "France - Charles DeGaulle, Charle Magne, Eleanor of Aquitaine"
+  "GERMANY - Rosa Luxemburg"
+  "Ghana - Yaa Asantewa, Kwame Nkrumah"
+  "Guinea"
+  "Greece"
   "Guinea-Bissau:"
-
-  "India:"
-    "Ashoka"
-    "Sri Krishna"
-
+  "Guyana"
+  "India - Ashoka, Sri Krishna"
   "Iran: Avicenna, Reza Pahlavi, Cyrus, Bahaullah"
-
-  "Iraq:"
-
-  "ITALY:"
-    "Marco Polo"
-    "Benito Mussolini"
-    "Julius Caesar"
-
-  "Kenya:"
-
-  "Madagascar:"
-
-  "Mozambique:"
-    "Joaquim Chissano"
-
-  "Namibia:"
-    "Hifikepunye Pohamba"
-
-  "North Korea:"
-    "Kim Jong Il"
-
-  "Liberia:"
-    "George Weah"
-
-  "Mexico:"
-
-  "Pakistan:"
-    "Guru Nanak"
-
-  "Poland:"
-
-  "Portugal:"
-    "Pedro Alvares Cabral"
-
-  "Russia:"
-    "Lenin"
-    "Rasputin"
-    "Peter the Great"
-
+  "Iraq"
+  "ITALY - Marco Polo, Benito Mussolini, Julius Caesar"
+  "Ivory Coast"
+  "Jamaica - Marcus Garvey"
+  "Kenya - Wangari Maathai, Dedan Kimathi"
+  "Madagascar"
+  "Malawi - John Chilembwe"
+  "Martinique - Franz Fanon"
+  "Mozambique - Joaquim Chissano"
+  "Namibia - Hifikepunye Pohamba"
+  "Nigeria - Funmilayo Ransome Kuti, Chinua Achebe, Olaudah Equiano"
+  "North Korea - Kim Jong Il"
+  "Liberia"
+  "Mexico"
+  "Pakistan - Guru Nanak"
+  "Poland"
+  "Portugal - Pedro Alvares Cabral"
+  "Russia - Lenin, Rasputin, Peter the Great"
   "Saudi Arabia:"
-
-  "Spain:"
-    "Miguel de Cervantes"
-    "Alfonso X"
-    "Hernan Cortez"
-    "Francisco Pizarro"
-
-  "Swaziland:"
-
-  "Turkey:"
-    "Attaturk"
-
-  "United Kingdom:"
-    "Winston Churchill"
-    "Henry VIII"
-
-  "US:"
-    "George Washington"
-    "Andrew Johnson"
-    "Dwight Eisenhower"
-    "Martin Luther King"
-    "Malcolm X"
-
-  "Uzbekistan:"
-
-  "Vietnam:"
-
-  "Zimbabwe:"
-    "Robert Mugabe"
+  "Senegal - Leopold Senghor"
+  "South Africa - Winnie Mandela, Miriam Makeba, Desmond Tutu"
+  "Spain - Miguel de Cervantes, Alfonso X, Hernan Cortez, Francisco Pizarro"
+  "Swaziland"
+  "Tanzania - Ali Mazrui"
+  "Trinidad e Tobago - George Padmore"
+  "Turkey - Attaturk"
+  "Uganda - Yoweri Museveni"
+  "United Kingdom - Winston Churchil, Henry VIII"
+  "US - George Washington, Andrew Johnson, Dwight Eisenhower, Martin Luther King, Malcolm X"
+  "Uzbekistan"
+  "Vietnam"
+  "Zimbabwe- Robert Mugabe"
 ]
