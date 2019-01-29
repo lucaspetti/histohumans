@@ -6,7 +6,7 @@ class Country < ApplicationRecord
   validates :name, presence: true
 
   def people?
-    true if Person.find_by(country: self)
+    true unless people.empty?
   end
 
   def histohumans
@@ -17,5 +17,11 @@ class Country < ApplicationRecord
     s = 0
     Country.all.each { |c| s += 1 if c.people? }
     "#{s} countries have characters. #{Country.count - s} are empty"
+  end
+
+  def self.print_empty
+    empty = []
+    Country.all.each { |c| empty << c.name if !c.people? }
+    puts empty
   end
 end
