@@ -15,11 +15,12 @@
 
 .continents-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: white;
   width: 70%;
   margin: 3em;
-  padding: 4em 2em;
+  padding: 3em 2em;
   border-radius: 10px;
   ul {
     color: darkblue;
@@ -29,7 +30,11 @@
   }
 
   .continents-list {
-    width: 30%;
+    // width: 30%;
+    .btn {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
   }
 
   .countries-list {
@@ -60,7 +65,8 @@
     padding: 2em;
 
     h3 {
-      font-size: 26px;
+      // font-size: 25px;
+      // margin: 10px 0;
     }
 
     .continents-list {
@@ -69,6 +75,18 @@
 
     .countries-list {
       width: 100%;
+      .country-card {
+        width: 100%;
+      }
+      .card {
+        margin: 1em 0em 0em 0em;
+      }
+      .people-list {
+        margin: 0;
+      }
+      .person-line {
+        padding: 0em 1em;
+      }
     }
   }
 }
