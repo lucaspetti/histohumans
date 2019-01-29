@@ -19,7 +19,7 @@
                   </div>
                   <div class="people-list hidden">
                     <ul> <!-- class="<%= "#{country.name}-people" %>" -->
-                      <% country.histohumans.each do |person| %>
+                      <% country.people.each do |person| %>
                         <li class="person-line">
                           <%= image_tag "#{person.photo}", alt: "alttext", class: "card-user" %>
                           <%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %>
