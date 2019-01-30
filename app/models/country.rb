@@ -17,7 +17,7 @@ class Country < ApplicationRecord
 
   def self.print_empty
     empty = []
-    Country.all.each { |c| empty << c.name if !c.people? }
+    Country.all.each { |c| empty << c.name unless c.people? }
     puts empty
   end
 end
