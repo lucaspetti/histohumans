@@ -1,4 +1,5 @@
 class Country < ApplicationRecord
+  mount_uploader :photo, PhotoUploader
   has_many :people
   has_many :maps
   belongs_to :continent
