@@ -12,7 +12,7 @@
             <% continent.countries.sort.each do |country| %>
               <% if country.people? %>
                 <div class="<%= "#{continent.name}" %> hidden country-card" id=<%= country.code %>>
-                  <div class="card" style="background-image: linear-gradient(rgba(250,250,250,0.4), rgba(250,250,250,0.4)), url(<%= country.photo %>);">
+                  <div class="card" style="background-image: linear-gradient(rgba(250,250,250,0.4), rgba(250,250,250,0.4)), url('<%= cl_image_path country.photo, crop: :fill, quality: 40; %>')">
                     <div class="card-description"><h2 class="country-name"><%= country.name %></h2></div>
                     <img class="card-flag" src="<%= country.flag %>">
                     <a class="card-link" href="#" ></a>
@@ -21,7 +21,7 @@
                     <ul> <!-- class="<%= "#{country.name}-people" %>" -->
                       <% country.people.each do |person| %>
                         <li class="person-line">
-                          <%= image_tag "#{person.photo}", alt: "alttext", class: "card-user" %>
+                          <%= image_tag "https://res.cloudinary.com/dxjfmbg7v/image/fetch/q_20/#{person.photo}", alt: "alttext", class: "card-user" %>
                           <%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %>
                         </li>
                     <% end %>
