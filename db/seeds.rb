@@ -30,12 +30,15 @@ people.each do |person|
   person["country"] = Country.find_by(name: person["country"])
 
   page = Wikipedia.find("#{person['first_name']}_#{person['last_name']}")
-  puts "Found on Wikipedia" if page.summary
+  # puts "Found on Wikipedia" if page.summary
   pe = Person.create!(person) unless Person.find_by(photo: person["photo"])
 
   update = Person.find_by(photo: person["photo"])
-  update.bio = page.summary
-  update.save!
+  unless update.bio == page.summary
+    update.bio = page.summary
+    puts "#{update.first_name} #{update.last_name} bio updated"
+    update.save!
+  end
 end
 
 puts 'Done!'
