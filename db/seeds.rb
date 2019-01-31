@@ -28,7 +28,14 @@ people = JSON.parse(File.read("db/people.json"))
 
 people.each do |person|
   person["country"] = Country.find_by(name: person["country"])
+
+  page = Wikipedia.find("#{person['first_name']}_#{person['last_name']}")
+  puts "Found on Wikipedia" if page.summary
   pe = Person.create!(person) unless Person.find_by(photo: person["photo"])
+
+  update = Person.find_by(photo: person["photo"])
+  update.bio = page.summary
+  update.save!
 end
 
 puts 'Done!'

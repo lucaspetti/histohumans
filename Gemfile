@@ -19,6 +19,7 @@ gem 'webpacker'
 gem 'fastimage'
 gem 'date'
 gem 'wikipedia-client'
+gem 'wikipedia'
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 
