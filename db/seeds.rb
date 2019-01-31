@@ -17,6 +17,7 @@ array = countries.each do |country|
       country["continent"] = Continent.find_by(name: country["continent"])
       c = Country.new(country)
       c.flag = "https://www.countryflags.io/#{c.code}/flat/64.png"
+      c.remote_photo_url = country["photo"]
       c.save!
     end
   end
@@ -28,17 +29,7 @@ people = JSON.parse(File.read("db/people.json"))
 
 people.each do |person|
   person["country"] = Country.find_by(name: person["country"])
-
-  page = Wikipedia.find("#{person['first_name']}_#{person['last_name']}")
-  # puts "Found on Wikipedia" if page.summary
-  pe = Person.create!(person) unless Person.find_by(photo: person["photo"])
-
-  update = Person.find_by(photo: person["photo"])
-  unless update.bio == page.summary
-    update.bio = page.summary
-    puts "#{update.first_name} #{update.last_name} bio updated"
-    update.save!
-  end
+  Person.create!(person) unless Person.find_by(photo: person["photo"])
 end
 
 puts 'Done!'
