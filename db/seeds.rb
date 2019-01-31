@@ -10,10 +10,10 @@ countries = JSON.parse(File.read("db/countries.json"))
 array = countries.each do |country|
   if Country.find_by(name: country["name"])
     c = Country.find_by(name: country["name"])
-    # url = country["photo"]
-    # c.remote_photo_url = url
+    url = country["photo"]
+    c.remote_photo_url = url
     # c.photo = country["photo"] || 'https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-    # c.save!
+    c.save!
   else
     if country["continent"]
       country["continent"] = Continent.find_by(name: country["continent"])
