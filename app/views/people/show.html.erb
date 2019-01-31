@@ -5,8 +5,8 @@
   <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
   <img src="" alt="flag" class="country-flag" data-url=<%= @person.country.flag %> >
   <p><%= @person.bio %></p>
-  <%= link_to "", "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
-              class: 'fab fa-wikipedia-w' %>
+  <div class="btn btn-histohumans"><%= link_to "", "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
+                class: 'fab fa-wikipedia-w' %></div>
   <%= render 'components/index-link' %>
 </div>
 
