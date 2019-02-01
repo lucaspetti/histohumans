@@ -1,5 +1,7 @@
 require 'json'
 require 'date'
+# require 'rubygems'
+# require 'htmlentities'
 require 'wikipedia'
 
 puts 'First name:'

@@ -48,6 +48,7 @@
   { "continent": "South America", "name": "Colombia", "code": "CO", "photo": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" },
   { "continent": "Africa", "name": "Comoros", "code": "KM", "photo": "https://upload.wikimedia.org/wikipedia/commons/3/39/Anjouan_-_Islands_of_Comoros.jpg" },
   { "continent": "Africa", "name": "Congo", "code": "CG", "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Brazzaville_2018.jpg" },
+  { "continent": "Africa", "name": "Republic of Congo", "code": "CG", "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Brazzaville_2018.jpg" },
   { "continent": "Africa", "name": "Democratic Republic of the Congo", "code": "CD", "photo": "https://c1.staticflickr.com/3/2339/2128154682_0681299a77_b.jpg" },
   { "continent": "Oceania", "name": "Cook Islands", "code": "CK" },
   { "continent": "North America", "name": "Costa Rica", "code": "CR", "photo": "https://c1.staticflickr.com/8/7306/27930390986_3280de297a_b.jpg" },
