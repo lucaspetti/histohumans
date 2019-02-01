@@ -9,11 +9,11 @@
   overflow: hidden;
 
   .content-box {
-    padding: 3em 5em;
+    padding: 1em 5em;
     height: 100%;
   }
   .person-card {
-    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.75));
+    // background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.75));
     border-radius: 15px;
     margin: 0 10em;
     padding: 1em;
@@ -34,6 +34,9 @@
     .person-image {
       max-width: 11.5em;
       max-height: 14em;
+    }
+    .btn-histohumans {
+      opacity: 0.8;
     }
   }
 

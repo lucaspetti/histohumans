@@ -2,8 +2,9 @@
   <div class="content-box text-center">
     <div class="person-card">
       <!-- <h1 id="title">Histohumans</h1> -->
-      <h1 id="title"><%= link_to 'Histohumans', people_path, class: 'btn btn-histohumans' %></h1>
+      <h1 id="title">Histohumans</h1>
       <p>Check out famous and historical characters!</p>
+        <p><%= link_to "Enter site", people_path, class: 'btn btn-histohumans' %></p>
       <div>
         <img src="" alt="histohuman-photo" class="person-image" data-url=<%= @person.photo %> >
         <p><%= link_to "#{@person.first_name} #{@person.last_name}", person_path(@person), class: 'btn btn-histohumans' %></p>
