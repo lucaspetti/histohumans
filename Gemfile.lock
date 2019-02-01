@@ -79,6 +79,7 @@ GEM
       sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.5.3)
@@ -221,6 +222,7 @@ DEPENDENCIES
   dotenv-rails
   fastimage
   font-awesome-sass (~> 5.5.0)
+  htmlentities
   jbuilder (~> 2.0)
   json
   listen (~> 3.0.5)
