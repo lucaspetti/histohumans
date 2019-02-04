@@ -1,0 +1,12 @@
+<h1>Quizzes to take:</h1>
+
+<% @quizzes.each do |quiz| %>
+  <%= quiz.name %> <p>Level: <%= quiz.level %></p>
+  <% quiz.questions.each do |question| %>
+    <%= question.content %>
+    <p>Score: <%= question.score %></p>
+    <% question.options.each do |option| %>
+      <li><%= option.text %></li>
+    <% end %>
+  <% end %>
+<% end %>
