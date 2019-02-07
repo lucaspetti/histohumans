@@ -1,7 +1,47 @@
+.profile-container {
+  margin: 1em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+
+  .profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 1em;
+    }
+
+    .buttons {
+    }
+  }
+  .text-container {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+      margin: 0.5em 0;
+    }
+    .person-bio {
+      padding: 0.5em;
+    }
+  }
+}
+
 .person-photo {
   border-radius: 10px;
   max-width: 12em;
 }
 .fa-wikipedia-w {
   color: black;
+}
+
+@media only screen and (max-width: 1030px) {
+  .profile-container {
+  flex-direction: column;
+  }
 }

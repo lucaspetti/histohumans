@@ -5,10 +5,18 @@
   color: #6f6e6e;
   background-color: white;
   font-family: 'Quicksand', sans-serif !important;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 .btn-histohumans:hover {
   color: #333333;
   background-color: #F6F6F6;
+  a {
+    text-decoration: none;
+  }
 }
 .side-margin {
   margin: 0px 4px !important;

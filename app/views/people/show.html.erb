@@ -1,17 +1,27 @@
 <div class="container text-center">
-  <div class="profile-container">
-    <h2><%= @person.first_name %> <%= @person.last_name %></h2>
-    <%= image_tag "https://res.cloudinary.com/dxjfmbg7v/image/fetch/q_20/#{@person.photo}",
-                  alt: "alttext",
-                  class: 'person-photo' %>
-    <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
-    <%= image_tag @person.country.flag, alt: "alttext" %>
-    <p><%= @person.bio %></p>
-    <div class="btn btn-histohumans">
-      <%= link_to "",
-                  "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
-                  class: 'fab fa-wikipedia-w' %>
+  <div class="profile-container border-shadow">
+    <div class="profile-photo">
+      <%= image_tag "https://res.cloudinary.com/dxjfmbg7v/image/fetch/q_20/#{@person.photo}",
+                    alt: "alttext",
+                    class: 'person-photo' %>
+      <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
+      <div class="buttons">
+        <div class="btn btn-histohumans">
+          <%= link_to "",
+                      "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
+                      class: 'fab fa-wikipedia-w' %>
+        </div>
+        <%= render 'components/index-link' %>
+      </div>
     </div>
-    <%= render 'components/index-link' %>
+    <div class="text-container text-center">
+      <div>
+        <%= image_tag @person.country.flag, alt: "alttext" %>
+        <h2 class="person-name"><%= @person.first_name %> <%= @person.last_name %></h2>
+      </div>
+      <div class="person-bio">
+        <p><%= @person.bio %></p>
+      </div>
+    </div>
   </div>
 </div>
