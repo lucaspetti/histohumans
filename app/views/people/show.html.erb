@@ -1,12 +1,12 @@
 <div class="container text-center">
   <h2><%= @person.first_name %> <%= @person.last_name %></h2>
-  <img src="" alt="" class="person-photo" data-url=<%= @person.photo %> >
+  <%= image_tag "https://res.cloudinary.com/dxjfmbg7v/image/fetch/q_20/#{@person.photo}",
+                alt: "alttext",
+                class: 'person-photo' %>
   <h4><%= @person.birthdate %> - <%= @person.death || "present" %></h4>
-  <img src="" alt="flag" class="country-flag" data-url=<%= @person.country.flag %> >
+  <%= image_tag @person.country.flag, alt: "alttext" %>
   <p><%= @person.bio %></p>
   <div class="btn btn-histohumans"><%= link_to "", "https://en.wikipedia.org/wiki/#{@person.first_name}_#{@person.last_name}",
                 class: 'fab fa-wikipedia-w' %></div>
   <%= render 'components/index-link' %>
 </div>
-
-<%= javascript_pack_tag 'show-page-images' %>
