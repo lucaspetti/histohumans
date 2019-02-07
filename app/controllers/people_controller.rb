@@ -1,7 +1,6 @@
 class PeopleController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
-
   def index
     @people = Person.all
     @countries = Country.all

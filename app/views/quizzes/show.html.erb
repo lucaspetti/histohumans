@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <h2><%= @quiz.name %></h2>
+  <% @quiz.questions.each do |question| %>
+    <%= question.content %>
+    <% question.options.each do |option| %>
+        <li>
+          <%= link_to option.text, "#",
+              class: 'btn btn-histohumans' %>
+        </li>
+    <% end %>
+  <% end %>
+</div>
+
+
