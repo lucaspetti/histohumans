@@ -1,12 +1,17 @@
-<div class="country-container">
-  <div class="country-name">
-    <h2><%= @country.name %></h2>
-    <%= image_tag @country.flag, alt: "alttext", class: 'country-flag' %>
+<div class="country-container border-shadow">
+  <div class="country-photo border-shadow" style="background-image: linear-gradient(rgba(250,250,250,0.4), rgba(250,250,250,0.4)), url('<%= cl_image_path @country.photo, crop: :fill, quality: 60; %>')">
+    <div class="country-name">
+      <h3><%= @country.name %></h3>
+      <%= image_tag @country.flag, alt: "alttext", class: 'country-flag' %>
+    </div>
   </div>
 
-  <% @people.each do |person| %>
-    <h3><%= person.first_name %> <%= person.last_name %></h3>
-  <% end %>
+  <h3>People:</h3>
+  <ul>
+    <% @people.each do |person| %>
+      <li> <%= link_to person.full_name, person_path(person) %></li>
+    <% end %>
+  </ul>
 </div>
 
 

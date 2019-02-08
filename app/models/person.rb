@@ -10,4 +10,8 @@ class Person < ApplicationRecord
   def self.sample
     Person.all.sample
   end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

@@ -1,7 +1,24 @@
 .country-container {
-  padding: 0.5em;
+  margin: 1em;
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+
+  .country-photo {
+    background-size: cover;
+    width: 90%;
+    height: 65%;
+    padding: 0 0.5em;
+
+    .country-name {
+      font-weight: bold;
+    }
+  }
+  li {
+    list-style: none;
+    margin-left: 0;
+  }
 }
