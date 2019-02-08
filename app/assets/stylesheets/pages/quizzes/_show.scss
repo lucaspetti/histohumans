@@ -19,3 +19,13 @@
     background-color: #ef8a8a;
   }
 }
+#score-display {
+    position: fixed;
+}
+#score {
+  transition: all .07s ease;
+}
+.score-up {
+  transform: scale(3);
+  font-size: 1.2em;
+}

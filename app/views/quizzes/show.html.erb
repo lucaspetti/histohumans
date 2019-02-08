@@ -1,6 +1,6 @@
 <div class="container text-center">
-  <h2><%= @quiz.name %></h2>
-  <h3>Your Score: <span id="score">0</span></h3>
+  <h2><%= @quiz.name %>: (<%= @quiz.questions.length %> questions)</h2>
+  <h3 id="score-display">Your Score: <span id="score">0</span></h3>
   <div class="quiz-container">
     <% @quiz.questions.each do |question| %>
       <div class="question-container">
