@@ -3,5 +3,6 @@ class CountriesController < ApplicationController
 
   def show
     @country = Country.find(params[:id])
+    @people = Person.where(country: @country)
   end
 end
