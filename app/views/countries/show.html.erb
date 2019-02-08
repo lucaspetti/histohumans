@@ -1,0 +1,12 @@
+<div class="country-container">
+  <div class="country-name">
+    <h2><%= @country.name %></h2>
+    <%= image_tag @country.flag, alt: "alttext", class: 'country-flag' %>
+  </div>
+
+  <% @people.each do |person| %>
+    <h3><%= person.first_name %> <%= person.last_name %></h3>
+  <% end %>
+</div>
+
+
