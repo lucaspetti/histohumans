@@ -1,12 +1,8 @@
-<h1>Quizzes to take:</h1>
+<div class="container text-center">
+  <h1>Quizzes to take:</h1>
 
-<% @quizzes.each do |quiz| %>
-  <%= quiz.name %> <p>Level: <%= quiz.level %></p>
-  <% quiz.questions.each do |question| %>
-    <%= question.content %>
-    <p>Score: <%= question.score %></p>
-    <% question.options.each do |option| %>
-      <li><%= option.text %></li>
-    <% end %>
+  <% @quizzes.each do |quiz| %>
+    <%= link_to quiz.name, quiz_path(quiz) %>
+    <p>Level: <%= quiz.level %></p>
   <% end %>
-<% end %>
+</div>
