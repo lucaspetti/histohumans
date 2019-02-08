@@ -23,7 +23,7 @@ puts "Adding countries..."
 #   end
 # end
 
-# puts "Countries added. Adding people..."
+puts "Countries added. Adding people..."
 
 # people = JSON.parse(File.read("db/people.json"))
 
