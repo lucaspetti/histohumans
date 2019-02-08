@@ -5,31 +5,53 @@ puts "Adding Continents..."
 end
 
 puts "Adding countries..."
-countries = JSON.parse(File.read("db/countries.json"))
+# countries = JSON.parse(File.read("db/countries.json"))
 
-array = countries.each do |country|
-  if Country.find_by(name: country["name"])
-    c = Country.find_by(name: country["name"])
-    c.remote_photo_url = country["photo"] unless c.photo
-    c.save!
-  else
-    if country["continent"]
-      country["continent"] = Continent.find_by(name: country["continent"])
-      c = Country.new(country)
-      c.flag = "https://www.countryflags.io/#{c.code}/flat/64.png"
-      c.remote_photo_url = country["photo"]
-      c.save!
+# array = countries.each do |country|
+#   if Country.find_by(name: country["name"])
+#     c = Country.find_by(name: country["name"])
+#     c.remote_photo_url = country["photo"] unless c.photo
+#     c.save!
+#   else
+#     if country["continent"]
+#       country["continent"] = Continent.find_by(name: country["continent"])
+#       c = Country.new(country)
+#       c.flag = "https://www.countryflags.io/#{c.code}/flat/64.png"
+#       c.remote_photo_url = country["photo"]
+#       c.save!
+#     end
+#   end
+# end
+
+# puts "Countries added. Adding people..."
+
+# people = JSON.parse(File.read("db/people.json"))
+
+# people.each do |person|
+#   person["country"] = Country.find_by(name: person["country"])
+#   Person.create!(person) unless Person.find_by(photo: person["photo"])
+# end
+
+puts "Adding quizzes..."
+
+quizzes = JSON.parse(File.read("db/quizzes.json"))
+
+Quiz.destroy_all
+
+quizzes.each do |quiz|
+  unless Quiz.find_by(name: quiz["name"])
+    q = Quiz.new(name: quiz["name"], level: quiz["level"], done: false)
+    q.country = quiz["country"] unless quiz["country"].empty?
+    quiz["questions"].each do |question|
+      quest = Question.new(quiz: q, content: question["content"], score: question["score"])
+
+      question["options"].each do |text, correct|
+        opt = Option.create!(question: quest, text: text, correct: correct)
+      end
+      quest.save!
     end
+    q.save!
   end
-end
-
-puts "Countries added. Adding people..."
-
-people = JSON.parse(File.read("db/people.json"))
-
-people.each do |person|
-  person["country"] = Country.find_by(name: person["country"])
-  Person.create!(person) unless Person.find_by(photo: person["photo"])
 end
 
 puts 'Done!'

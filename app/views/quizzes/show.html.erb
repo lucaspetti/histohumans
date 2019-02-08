@@ -1,15 +1,18 @@
 <div class="container text-center">
   <h2><%= @quiz.name %></h2>
+  <h3>Your Score: <span id="score">0</span></h3>
   <div class="quiz-container">
     <% @quiz.questions.each do |question| %>
-      <%= question.content %>
-      <% question.options.each do |option| %>
-          <li>
-            <%= link_to option.text, "#",
-                class: 'btn btn-histohumans quiz-option',
-                "data-attribute": "#{option.correct}" %>
-          </li>
-      <% end %>
+      <div class="question-container">
+        <%= question.content %>
+        <% question.options.each do |option| %>
+            <li>
+              <%= link_to option.text, "#",
+                  class: 'btn btn-histohumans quiz-option',
+                  "data-attribute": "#{option.correct}" %>
+            </li>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>

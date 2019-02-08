@@ -25,6 +25,26 @@
         }
       },
       {
+        "content": "What is the biggest country in South America?",
+        "score": "1",
+        "options": {
+          "Argentina": false,
+          "Chile": false,
+          "Paraguay": false,
+          "Brasil": true
+        }
+      },
+      {
+        "content": "Which of these countries was a former Soviet republic?",
+        "score": "1",
+        "options": {
+          "Myanmar": false,
+          "Nepal": false,
+          "Kazakhstan": true,
+          "North Korea": false
+        }
+      },
+      {
         "content": "In which continent is Bhutan?",
         "score": "1",
         "options": {

@@ -1,6 +1,10 @@
 .quiz-container {
   padding: 0.5em;
 
+  .question-container {
+    margin: 1.5em;
+  }
+
   li {
     text-decoration: none;
     margin: 0.5em 0;
