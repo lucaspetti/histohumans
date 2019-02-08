@@ -7,6 +7,9 @@ questionContainers.forEach(function (container) {
   for (let option of options) {
     option.addEventListener('click', function(e) {
     e.preventDefault();
+    if(option.dataset.attribute === "true") {
+      score.innerHTML = parseInt(score.innerHTML) + 1;
+    }
     showCorrect(options);
     })
   }
@@ -16,7 +19,6 @@ function showCorrect(options) {
   for (let option of options) {
     if(option.dataset.attribute === "true") {
       option.classList.add('green');
-      score.innerHTML = parseInt(score.innerHTML) + 1;
     } else {
       option.classList.add('red');
     }
