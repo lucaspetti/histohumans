@@ -41,7 +41,7 @@ Quiz.destroy_all
 quizzes.each do |quiz|
   unless Quiz.find_by(name: quiz["name"])
     q = Quiz.new(name: quiz["name"], level: quiz["level"], done: false)
-    q.country = quiz["country"] unless quiz["country"].empty?
+    q.country = Country.find_by(name: quiz["country"]) unless quiz["country"].empty?
     quiz["questions"].each do |question|
       quest = Question.new(quiz: q, content: question["content"], score: question["score"])
 

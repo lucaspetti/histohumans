@@ -1,6 +1,6 @@
 [
   {
-    "name": "Basic Quiz",
+    "name": "Basic World Quiz",
     "level": "1",
     "country": "",
     "questions": [
@@ -52,6 +52,63 @@
           "South America": false,
           "Asia": true,
           "Africa": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "Basic China Quiz",
+    "level": "2",
+    "country": "China",
+    "questions": [
+      {
+        "content": "What is the capital of China?",
+        "score": "1",
+        "options": {
+          "Taiwan": false,
+          "Hong Kong": false,
+          "Beijing": true,
+          "Xangai": false
+        }
+      },
+      {
+        "content": "Which of these countries does not share a border with China?",
+        "score": "2",
+        "options": {
+          "Mongolia": false,
+          "Kazakhstan": false,
+          "Cambodia": true,
+          "Tajikistan": false
+        }
+      },
+      {
+        "content": "What is the biggest city in China?",
+        "score": "2",
+        "options": {
+          "Chongqing": false,
+          "Guangzhou": false,
+          "Beijing": false,
+          "Xangai": true
+        }
+      },
+      {
+        "content": "Which of these languages is not spoken in China?",
+        "score": "3",
+        "options": {
+          "Mandarin": false,
+          "Cantonese": false,
+          "Xhosa": true,
+          "Shanghainese": false
+        }
+      },
+      {
+        "content": "Who was the first president of China?",
+        "score": "3",
+        "options": {
+          "Mao Zedong": false,
+          "Feng Guozhang": false,
+          "Sun Yat-sen": true,
+          "Li Yuanhong": false
         }
       }
     ]
