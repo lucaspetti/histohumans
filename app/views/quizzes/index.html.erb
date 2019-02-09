@@ -1,8 +1,7 @@
-<div class="container text-center">
+<div class="quizzes-container container text-center">
   <h1>Quizzes to take:</h1>
 
   <% @quizzes.each do |quiz| %>
-    <%= link_to quiz.name, quiz_path(quiz) %>
-    <p>Level: <%= quiz.level %></p>
+    <%= link_to "#{quiz.name} (Level #{quiz.level})", quiz_path(quiz), class: 'btn btn-histohumans' %>
   <% end %>
 </div>

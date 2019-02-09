@@ -30,11 +30,13 @@ score.addEventListener('transitionend', removeTransition);
 
 questionContainers.forEach(function (container) {
   const options = container.getElementsByClassName('quiz-option');
+  const points = container.querySelector('#points').innerText[1];
   for (let option of options) {
     option.addEventListener('click', function(e) {
       e.preventDefault();
       if(option.dataset.attribute === "true") {
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        console.log(option);
+        score.innerHTML = parseInt(score.innerHTML) + parseInt(points);
         score.classList.add('score-up');
       }
       showCorrect(options);
