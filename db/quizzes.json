@@ -112,5 +112,62 @@
         }
       }
     ]
+  },
+  {
+    "name": "Basic US Quiz",
+    "level": "2",
+    "country": "United States",
+    "questions": [
+      {
+        "content": "What is the capital of the United States?",
+        "score": "1",
+        "options": {
+          "New York": false,
+          "Washington": true,
+          "Los Angeles": false,
+          "Hollywood": false
+        }
+      },
+      {
+        "content": "Which of these countries does not share a border (maritime or territorial) with the United States?",
+        "score": "2",
+        "options": {
+          "Mexico": false,
+          "Canada": false,
+          "Russia": false,
+          "Panama": true
+        }
+      },
+      {
+        "content": "What is the biggest city in the United States?",
+        "score": "2",
+        "options": {
+          "Los Angeles": false,
+          "New York": true,
+          "Chicago": false,
+          "Houston": false
+        }
+      },
+      {
+        "content": "What is the biggest state in the US by area?",
+        "score": "3",
+        "options": {
+          "New York": false,
+          "California": false,
+          "Alaska": true,
+          "Texas": false
+        }
+      },
+      {
+        "content": "Who was the second president of the United States?",
+        "score": "3",
+        "options": {
+          "George Washington": false,
+          "Benjamin Franklin": false,
+          "John Adams": true,
+          "Theodor Roosevelt": false
+        }
+      }
+    ]
   }
 ]

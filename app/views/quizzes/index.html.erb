@@ -2,6 +2,9 @@
   <h1>Quizzes to take:</h1>
 
   <% @quizzes.each do |quiz| %>
-    <%= link_to "#{quiz.name} (Level #{quiz.level})", quiz_path(quiz), class: 'btn btn-histohumans' %>
+    <div class="btn btn-histohumans">
+      <%= image_tag "#{quiz.country&.flag}", alt: "flag", class: 'quiz-country-flag' if quiz.country %>
+      <%= link_to "#{quiz.name} (Level #{quiz.level})", quiz_path(quiz) %>
+    </div>
   <% end %>
 </div>
