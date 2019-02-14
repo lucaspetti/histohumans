@@ -120,7 +120,7 @@
   { "continent": "Asia", "name": "South Korea", "code": "KR", "photo": "https://images.unsplash.com/photo-1533637322518-7aadda74ddc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=319&q=80" },
   { "continent": "Asia", "name": "Kuwait", "code": "KW", "photo": "https://images.unsplash.com/photo-1511371496040-1fb40794e675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" },
   { "continent": "Asia", "name": "Kyrgyzstan", "code": "KG", "photo": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kyrgyzstan_Mounts_Kyrgyz_Ala_Too_001.jpg" },
-  { "continent": "Asia", "name": "Laos", "code": "LA" },
+  { "continent": "Asia", "name": "Laos", "code": "LA", "photo": "https://images.unsplash.com/photo-1441632260885-881646a7fd4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" },
   { "continent": "Europe", "name": "Latvia", "code": "LV", "photo": "https://upload.wikimedia.org/wikipedia/commons/5/54/Old_Riga%2C_Latvia.jpeg" },
   { "continent": "Asia", "name": "Lebanon", "code": "LB", "photo": "https://images.pexels.com/photos/614628/pexels-photo-614628.jpeg?cs=srgb&dl=beirut-lebanon-614628.jpg&fm=jpg" },
   { "continent": "Africa", "name": "Lesotho", "code": "LS" },
