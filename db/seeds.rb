@@ -5,23 +5,23 @@ puts "Adding Continents..."
 end
 
 puts "Adding countries..."
-countries = JSON.parse(File.read("db/countries.json"))
+# countries = JSON.parse(File.read("db/countries.json"))
 
-array = countries.each do |country|
-  if Country.find_by(name: country["name"])
-    c = Country.find_by(name: country["name"])
-    c.remote_photo_url = country["photo"] if c.photo.filename == 'https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg_auto_compress_cs_tinysrgb_dpr_2_h_650_w_940' || c.photo == nil
-    c.save!
-  else
-    if country["continent"]
-      country["continent"] = Continent.find_by(name: country["continent"])
-      c = Country.new(country)
-      c.flag = "https://www.countryflags.io/#{c.code}/flat/64.png"
-      c.remote_photo_url = country["photo"]
-      c.save!
-    end
-  end
-end
+# array = countries.each do |country|
+#   if Country.find_by(name: country["name"])
+#     c = Country.find_by(name: country["name"])
+#     c.remote_photo_url = country["photo"] if c.photo.filename == 'https://images.pexels.com/photos/356993/pexels-photo-356993.jpeg_auto_compress_cs_tinysrgb_dpr_2_h_650_w_940' || c.photo == nil
+#     c.save!
+#   else
+#     if country["continent"]
+#       country["continent"] = Continent.find_by(name: country["continent"])
+#       c = Country.new(country)
+#       c.flag = "https://www.countryflags.io/#{c.code}/flat/64.png"
+#       c.remote_photo_url = country["photo"]
+#       c.save!
+#     end
+#   end
+# end
 
 puts "Countries added. Adding people..."
 
@@ -36,7 +36,7 @@ puts "Adding quizzes..."
 
 quizzes = JSON.parse(File.read("db/quizzes.json"))
 
-Quiz.destroy_all
+# Quiz.destroy_all
 
 quizzes.each do |quiz|
   unless Quiz.find_by(name: quiz["name"])
