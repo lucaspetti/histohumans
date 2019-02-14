@@ -25,12 +25,12 @@ puts "Adding countries..."
 
 puts "Countries added. Adding people..."
 
-# people = JSON.parse(File.read("db/people.json"))
+people = JSON.parse(File.read("db/people.json"))
 
-# people.each do |person|
-#   person["country"] = Country.find_by(name: person["country"])
-#   Person.create!(person) unless Person.find_by(photo: person["photo"])
-# end
+people.each do |person|
+  person["country"] = Country.find_by(name: person["country"])
+  Person.create!(person) unless Person.find_by(photo: person["photo"])
+end
 
 puts "Adding quizzes..."
 
