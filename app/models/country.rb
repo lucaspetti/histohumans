@@ -10,6 +10,12 @@ class Country < ApplicationRecord
     true unless people.empty?
   end
 
+  def people_with_number(number)
+    people_array = []
+    people.each_with_index { |person, i| people_array << person if i < number }
+    return people_array
+  end
+
   def self.empty_count
     s = 0
     Country.all.each { |c| s += 1 if c.people? }
