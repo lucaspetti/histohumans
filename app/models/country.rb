@@ -10,6 +10,10 @@ class Country < ApplicationRecord
     true unless people.empty?
   end
 
+  def five_people
+    people.each_with_index { |person, i| puts person.full_name if i < 5 }
+  end
+
   def self.empty_count
     s = 0
     Country.all.each { |c| s += 1 if c.people? }
