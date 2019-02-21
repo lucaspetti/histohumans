@@ -18,7 +18,7 @@
                   </div>
                   <div class="people-list hidden">
                     <ul>
-                      <% country.people.each do |person| %>
+                      <% country.people_with_number(5).each do |person| %>
                         <li class="person-line">
                           <%= image_tag "https://res.cloudinary.com/dxjfmbg7v/image/fetch/q_20/#{person.photo}", alt: "alttext", class: "card-user" %>
                           <%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %>
