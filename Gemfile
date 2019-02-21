@@ -8,7 +8,6 @@ gem 'puma'
 gem 'rails', '5.2.1'
 gem 'redis'
 gem 'json'
-
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 5.5.0'
@@ -29,6 +28,10 @@ group :development do
 end
 
 group :development, :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'launchy'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'listen', '~> 3.0.5'
