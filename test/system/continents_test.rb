@@ -5,6 +5,6 @@ class ContinentsTest < ApplicationSystemTestCase
     visit "/people"
     assert_selector "h2", text: "Search within the map or by Continent:"
 
-    assert_selector "a.continent-link", text: "North America"
+    # assert_selector "a.continent-link", text: "North America"
   end
 end
