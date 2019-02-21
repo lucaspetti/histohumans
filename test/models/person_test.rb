@@ -12,7 +12,10 @@ class PersonTest < ActiveSupport::TestCase
   end
 
   test "sample returns a person instance" do
-    sample = Person.sample
-    assert_instance_of Person, sample, "Sample is not an instance of Person"
+    assert_instance_of Person, Person.sample, "Sample is not an instance of Person"
+  end
+
+  test "ensures that there is a first name" do
+    assert_not_nil Person.first.first_name, "First name is nil"
   end
 end
