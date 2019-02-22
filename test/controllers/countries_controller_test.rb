@@ -1,7 +1,16 @@
 require 'test_helper'
 
 class CountriesControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
+  # setup do
+  #   @country = countries(:one)
+  # end
+
+  # teardown do
+  #   Rails.cache.clear
+  # end
+
+  # test "should show country" do
+  #   get country_url(@country)
+  #   assert_response :success
   # end
 end
