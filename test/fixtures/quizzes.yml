@@ -1,0 +1,5 @@
+basicworldquiz:
+  name: 'Basic World Quiz'
+  level: '1'
+  country: ''
+  questions: one, two, three, four, five
