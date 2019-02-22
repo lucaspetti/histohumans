@@ -1,0 +1,60 @@
+one:
+  text: 'Abraham Lincoln'
+  correct: false
+two:
+  text: 'George Washington'
+  correct: true
+three:
+  text: 'Andrew Johnson'
+  correct: false
+four:
+  text: 'Benjamin Franklin'
+  correct: false
+five:
+  text: 'Krakow'
+  correct: false
+six:
+  text: 'Danzig'
+  correct: false
+seven:
+  text: 'Warsaw'
+  correct: true
+eight:
+  text: 'Bratislava'
+  correct: false
+nine:
+  text: 'Argentina'
+  correct: false
+ten:
+  text: 'Chile'
+  correct: false
+eleven:
+  text: 'Paraguay'
+  correct: false
+twelve:
+  text: 'Brazil'
+  correct: true
+thirteen:
+  text: 'Myanmar'
+  correct: false
+fourteen:
+  text: 'Nepal'
+  correct: false
+fifteen:
+  text: 'Kazakhstan'
+  correct: true
+sixteen:
+  text: 'North Korea'
+  correct: false
+seventeen:
+  text: 'North America'
+  correct: false
+eighteen:
+  text: 'South America'
+  correct: false
+nineteen:
+  text: 'Asia'
+  correct: true
+twenty:
+  text: 'Africa'
+  correct: false
