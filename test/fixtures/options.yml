@@ -1,60 +1,60 @@
 one:
   text: 'Abraham Lincoln'
-  correct: false
+  correct: 'no'
 two:
   text: 'George Washington'
-  correct: true
+  correct: 'yes'
 three:
   text: 'Andrew Johnson'
-  correct: false
+  correct: 'no'
 four:
   text: 'Benjamin Franklin'
-  correct: false
+  correct: 'no'
 five:
   text: 'Krakow'
-  correct: false
+  correct: 'no'
 six:
   text: 'Danzig'
-  correct: false
+  correct: 'no'
 seven:
   text: 'Warsaw'
-  correct: true
+  correct: 'yes'
 eight:
   text: 'Bratislava'
-  correct: false
+  correct: 'no'
 nine:
   text: 'Argentina'
-  correct: false
+  correct: 'no'
 ten:
   text: 'Chile'
-  correct: false
+  correct: 'no'
 eleven:
   text: 'Paraguay'
-  correct: false
+  correct: 'no'
 twelve:
   text: 'Brazil'
-  correct: true
+  correct: 'yes'
 thirteen:
   text: 'Myanmar'
-  correct: false
+  correct: 'no'
 fourteen:
   text: 'Nepal'
-  correct: false
+  correct: 'no'
 fifteen:
   text: 'Kazakhstan'
-  correct: true
+  correct: 'yes'
 sixteen:
   text: 'North Korea'
-  correct: false
+  correct: 'no'
 seventeen:
   text: 'North America'
-  correct: false
+  correct: 'no'
 eighteen:
   text: 'South America'
-  correct: false
+  correct: 'no'
 nineteen:
   text: 'Asia'
-  correct: true
+  correct: 'yes'
 twenty:
   text: 'Africa'
-  correct: false
+  correct: 'no'
