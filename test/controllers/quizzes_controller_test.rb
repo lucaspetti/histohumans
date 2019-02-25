@@ -2,7 +2,7 @@ require 'test_helper'
 
 class QuizzesControllerTest < ActionDispatch::IntegrationTest
   # setup do
-  #   @quiz = quizzes(:one)
+  #   @quiz = quizzes(:basicworldquiz)
   # end
 
   # teardown do

@@ -1,0 +1,80 @@
+one:
+  text: 'Abraham Lincoln'
+  correct: false
+  question: 'q_one'
+two:
+  text: 'George Washington'
+  correct: true
+  question: 'q_one'
+three:
+  text: 'Andrew Johnson'
+  correct: false
+  question: 'q_one'
+four:
+  text: 'Benjamin Franklin'
+  correct: false
+  question: 'q_one'
+five:
+  text: 'Krakow'
+  correct: false
+  question: 'q_two'
+six:
+  text: 'Danzig'
+  correct: false
+  question: 'q_two'
+seven:
+  text: 'Warsaw'
+  correct: true
+  question: 'q_two'
+eight:
+  text: 'Bratislava'
+  correct: false
+  question: 'q_two'
+nine:
+  text: 'Argentina'
+  correct: false
+  question: 'q_three'
+ten:
+  text: 'Chile'
+  correct: false
+  question: 'q_three'
+eleven:
+  text: 'Paraguay'
+  correct: false
+  question: 'q_three'
+twelve:
+  text: 'Brazil'
+  correct: true
+  question: 'q_three'
+thirteen:
+  text: 'Myanmar'
+  correct: false
+  question: 'q_four'
+fourteen:
+  text: 'Nepal'
+  correct: false
+  question: 'q_four'
+fifteen:
+  text: 'Kazakhstan'
+  correct: true
+  question: 'q_four'
+sixteen:
+  text: 'North Korea'
+  correct: false
+  question: 'q_four'
+seventeen:
+  text: 'North America'
+  correct: false
+  question: 'q_five'
+eighteen:
+  text: 'South America'
+  correct: false
+  question: 'q_five'
+nineteen:
+  text: 'Asia'
+  correct: true
+  question: 'q_five'
+twenty:
+  text: 'Africa'
+  correct: false
+  question: 'q_five'

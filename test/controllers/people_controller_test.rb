@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PeopleControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @person = people(:lincoln)
+    @person = people(:napoleon)
   end
 
   teardown do
