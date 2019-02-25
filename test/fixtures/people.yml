@@ -34,3 +34,12 @@ cromwell:
   death: 1658-09-03
   country: 'United Kingdom'
   bio: 'Oliver Cromwell was an English military and political leader. He served as Lord Protector of the Commonwealth of England, Scotland, and Ireland from 1653 until his death, acting simultaneously as head of state and head of government of the new republic'
+shahdurrani:
+  first_name: 'Ahmad'
+  last_name: 'Shah Durrani'
+  occupation: 'Monarch'
+  photo: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Ahmad_Shah_Baba.JPG'
+  birthdate: 1722-01-01
+  death: 1772-10-16
+  country: afghanistan
+  bio: 'Ahmad Shāh Durrānī, also known as Ahmad Khān Abdālī, was the founder of the Durrani Empire and is regarded as the founder of the modern state of Afghanistan. After the assassination of Nader Shah Afshar in 1747, Ahmad Shah Durrani was chosen as King of Afghanistan. Afghans often refer to him as Ahmad Shāh Bābā'
