@@ -1,60 +1,80 @@
 one:
   text: 'Abraham Lincoln'
-  correct: 'no'
+  correct: false
+  question: 'q_one'
 two:
   text: 'George Washington'
-  correct: 'yes'
+  correct: true
+  question: 'q_one'
 three:
   text: 'Andrew Johnson'
-  correct: 'no'
+  correct: false
+  question: 'q_one'
 four:
   text: 'Benjamin Franklin'
-  correct: 'no'
+  correct: false
+  question: 'q_one'
 five:
   text: 'Krakow'
-  correct: 'no'
+  correct: false
+  question: 'q_two'
 six:
   text: 'Danzig'
-  correct: 'no'
+  correct: false
+  question: 'q_two'
 seven:
   text: 'Warsaw'
-  correct: 'yes'
+  correct: true
+  question: 'q_two'
 eight:
   text: 'Bratislava'
-  correct: 'no'
+  correct: false
+  question: 'q_two'
 nine:
   text: 'Argentina'
-  correct: 'no'
+  correct: false
+  question: 'q_three'
 ten:
   text: 'Chile'
-  correct: 'no'
+  correct: false
+  question: 'q_three'
 eleven:
   text: 'Paraguay'
-  correct: 'no'
+  correct: false
+  question: 'q_three'
 twelve:
   text: 'Brazil'
-  correct: 'yes'
+  correct: true
+  question: 'q_three'
 thirteen:
   text: 'Myanmar'
-  correct: 'no'
+  correct: false
+  question: 'q_four'
 fourteen:
   text: 'Nepal'
-  correct: 'no'
+  correct: false
+  question: 'q_four'
 fifteen:
   text: 'Kazakhstan'
-  correct: 'yes'
+  correct: true
+  question: 'q_four'
 sixteen:
   text: 'North Korea'
-  correct: 'no'
+  correct: false
+  question: 'q_four'
 seventeen:
   text: 'North America'
-  correct: 'no'
+  correct: false
+  question: 'q_five'
 eighteen:
   text: 'South America'
-  correct: 'no'
+  correct: false
+  question: 'q_five'
 nineteen:
   text: 'Asia'
-  correct: 'yes'
+  correct: true
+  question: 'q_five'
 twenty:
   text: 'Africa'
-  correct: 'no'
+  correct: false
+  question: 'q_five'
