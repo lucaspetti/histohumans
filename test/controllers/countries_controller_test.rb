@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CountriesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @country = countries(:albania)
+    @country = countries(:france)
   end
 
   teardown do
