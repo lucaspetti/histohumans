@@ -9,7 +9,7 @@ class CountryTest < ActiveSupport::TestCase
   test "country should have many people" do
     country = Country.first
     assert_not_nil country.people, "people method returns nil"
-    assert_instance_of Person, country.people.first, "people method returns an array with instances of person"
+    assert_instance_of Person, country.people.first, "people method does not return a collection with instances of person"
   end
 
   test "should belong to a continent" do
