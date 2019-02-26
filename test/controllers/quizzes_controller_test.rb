@@ -1,20 +1,20 @@
 require 'test_helper'
 
 class QuizzesControllerTest < ActionDispatch::IntegrationTest
-  # setup do
-  #   @quiz = quizzes(:basicworldquiz)
-  # end
+  setup do
+    @quiz = quizzes(:basicworldquiz)
+  end
 
-  # teardown do
-  #   Rails.cache.clear
-  # end
+  teardown do
+    Rails.cache.clear
+  end
 
-  # test "should get index" do
-  #   get quizzes_url
-  #   assert_equal "index", @controller.action_name
-  #   assert_match "Quizzes", @response.body
-  #   assert_response :success
-  # end
+  test "should get index" do
+    get quizzes_url
+    assert_equal "index", @controller.action_name
+    assert_match "Quizzes", @response.body
+    assert_response :success
+  end
 
   # test "should show quiz" do
   #   get quiz_url(@quiz)
