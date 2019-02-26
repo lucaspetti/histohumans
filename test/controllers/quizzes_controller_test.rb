@@ -16,25 +16,25 @@ class QuizzesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # test "should show quiz" do
-  #   get quiz_url(@quiz)
-  #   assert_response :success
-  # end
+  test "should show quiz" do
+    get quiz_url(@quiz)
+    assert_response :success
+  end
 
-  # test "should destroy quiz" do
-  #   assert_difference('Quiz.count', -1) do
-  #     delete quiz_url(@quiz)
-  #   end
+  test "should destroy quiz" do
+    assert_difference('Quiz.count', -1) do
+      delete quiz_url(@quiz), "quiz was not deleted"
+    end
 
-  #   assert_redirected_to quizzess_path
-  # end
+    assert_redirected_to quizzess_path
+  end
 
-  # test "should update quiz" do
-  #   patch quiz_url(@quiz), params: { quiz: { title: "updated" } }
+  test "should update quiz" do
+    patch quiz_url(@quiz), params: { quiz: { name: "updated" } }
 
-  #   assert_redirected_to quiz_path(@quiz)
-  #   # Reload association to fetch updated data and assert that title is updated.
-  #   @quiz.reload
-  #   assert_equal "updated", @quiz.title
-  # end
+    assert_redirected_to quiz_path(@quiz)
+    # Reload association to fetch updated data and assert that title is updated.
+    @quiz.reload
+    assert_equal "updated", @quiz.name
+  end
 end
