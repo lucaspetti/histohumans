@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_27_111411) do
+ActiveRecord::Schema.define(version: 2019_02_27_111637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,7 +30,9 @@ ActiveRecord::Schema.define(version: 2019_02_27_111411) do
     t.string "flag"
     t.string "photo"
     t.bigint "continent_id"
+    t.bigint "country_id"
     t.index ["continent_id"], name: "index_countries_on_continent_id"
+    t.index ["country_id"], name: "index_countries_on_country_id"
   end
 
   create_table "maps", force: :cascade do |t|
@@ -69,7 +71,9 @@ ActiveRecord::Schema.define(version: 2019_02_27_111411) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+    t.bigint "page_id"
     t.index ["country_id"], name: "index_people_on_country_id"
+    t.index ["page_id"], name: "index_people_on_page_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -112,9 +116,11 @@ ActiveRecord::Schema.define(version: 2019_02_27_111411) do
   end
 
   add_foreign_key "countries", "continents"
+  add_foreign_key "countries", "countries"
   add_foreign_key "maps", "countries"
   add_foreign_key "options", "questions"
   add_foreign_key "people", "countries"
+  add_foreign_key "people", "pages"
   add_foreign_key "questions", "quizzes"
   add_foreign_key "quizzes", "countries"
   add_foreign_key "quizzes", "people"
