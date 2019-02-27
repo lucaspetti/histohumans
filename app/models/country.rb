@@ -1,8 +1,11 @@
 class Country < ApplicationRecord
   mount_uploader :photo, PhotoUploader
+  belongs_to :continent
+
   has_many :people
   has_many :maps
-  belongs_to :continent
+  has_many :quizzes
+  has_one :page
 
   validates :name, presence: true
 
