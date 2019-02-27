@@ -1,5 +1,6 @@
 class Quiz < ApplicationRecord
   belongs_to :country, optional: true
+  belongs_to :person, optional: true
   validates :name, uniqueness: true, presence: true
   validates :level, inclusion: { in: ['basic', 'intermediate', 'advanced'],
                                  message: "%{value} is not a valid level" },
