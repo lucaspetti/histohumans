@@ -29,7 +29,9 @@ people = JSON.parse(File.read("db/people.json"))
 
 people.each do |person|
   person["country"] = Country.find_by(name: person["country"])
-  Person.create!(person) unless Person.find_by(photo: person["photo"])
+  new_person = Person.create!(person) unless Person.find_by(photo: person["photo"])
+  page = Wikipedia.find(new_person.full_name)
+  # Page.create!(person: new_person, url: page.fullurl, content: page.content)
 end
 
 puts "Adding quizzes..."
