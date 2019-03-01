@@ -17,4 +17,10 @@ class Person < ApplicationRecord
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def compatriots
+    compatriots = Person.where(country: country).to_ary
+    compatriots.delete(self)
+    compatriots
+  end
 end
