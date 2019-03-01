@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
   belongs_to :country
+  has_one :continent, through: :country
 
   has_many :maps, through: :countries
   has_many :quizzes
