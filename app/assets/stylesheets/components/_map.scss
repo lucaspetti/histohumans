@@ -69,3 +69,58 @@
     }
   }
 }
+
+@media only screen and (max-width: 1030px) {
+  #map-div {
+    #info {
+      width: 70%;
+      overflow: hidden;
+      max-width: 1100px;
+      margin: 10px auto;
+      background-color: white;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 1.5em;
+      font-weight: 400;
+      text-align: center;
+    }
+    #selected {
+      color: darkblue;
+      list-style: none;
+      margin-left: 0;
+        .people-list {
+        margin: 0;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 31px -5px rgba(179,179,179,0.5);
+        padding: 0.6em;
+        position: relative;
+          .card-user {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            flex: 0;
+          }
+        .person-line {
+          margin: 0.5em 0em;
+          display: flex;
+          flex-direction: row;
+          padding: 0em 3em;
+
+          a {
+            align-self: center;
+            flex: 1;
+          }
+        }
+      }
+      .card {
+        width: 100%;
+        margin: 0;
+      }
+      li {
+        margin: 0.5em 0;
+      }
+    }
+  }
+}
