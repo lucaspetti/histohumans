@@ -21,10 +21,10 @@ puts "Adding countries..."
 #       c.save!
 #     end
 #   end
-  # Country.all.each do |country|
-  #   page = Wikipedia.find(country.name)
-  #   Page.create!(url: page.fullurl, content: page.content, country: country)
-  # end
+#   Country.all.each do |country|
+#     page = Wikipedia.find(country.name)
+#     Page.create!(url: page.fullurl, content: page.content, country: country)
+#   end
 # end
 
 puts "Countries added. Adding people..."
