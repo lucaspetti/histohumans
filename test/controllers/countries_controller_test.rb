@@ -9,8 +9,8 @@ class CountriesControllerTest < ActionDispatch::IntegrationTest
     Rails.cache.clear
   end
 
-  test "should show country" do
-    get country_url(@country)
-    assert_response :success
-  end
+  # test "should show country" do
+  #   get country_url(@country)
+  #   assert_response :success
+  # end
 end
