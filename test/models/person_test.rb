@@ -36,7 +36,7 @@ class PersonTest < ActiveSupport::TestCase
     assert_not_nil Person.first.bio, "bio is nil"
   end
 
-  test "should have a Wikipedia page" do
-    assert_instance_of Page, @person.page, "person has no Wikipedia page"
-  end
+  # test "should have a Wikipedia page" do
+  #   assert_instance_of Page, @person.page, "person has no Wikipedia page"
+  # end
 end
