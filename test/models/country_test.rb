@@ -29,9 +29,9 @@ class CountryTest < ActiveSupport::TestCase
     assert_instance_of Continent, @country.continent, "continent method returns a valid continent"
   end
 
-  test "should have a Wikipedia page" do
-    assert_instance_of Page, @country.page, "country has no Wikipedia page"
-  end
+  # test "should have a Wikipedia page" do
+  #   assert_instance_of Page, @country.page, "country has no Wikipedia page"
+  # end
 
   test "empty_count should return a string" do
     assert_instance_of String, Country.empty_count, "empty_count does not return a string"
