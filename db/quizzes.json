@@ -1,7 +1,7 @@
 [
   {
     "name": "Basic World Quiz",
-    "level": "1",
+    "level": "basic",
     "country": "",
     "questions": [
       {
@@ -58,7 +58,7 @@
   },
   {
     "name": "Basic China Quiz",
-    "level": "2",
+    "level": "basic",
     "country": "China",
     "questions": [
       {
@@ -115,7 +115,7 @@
   },
   {
     "name": "Basic US Quiz",
-    "level": "2",
+    "level": "basic",
     "country": "United States",
     "questions": [
       {
@@ -166,6 +166,234 @@
           "Benjamin Franklin": false,
           "John Adams": true,
           "Theodor Roosevelt": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "Basic Brazil Quiz",
+    "level": "basic",
+    "country": "Brazil",
+    "questions": [
+      {
+        "content": "What is the capital of Brazil?",
+        "score": "1",
+        "options": {
+          "São Paulo": false,
+          "Rio de Janeiro": false,
+          "Brasilia": true,
+          "Buenos Aires": false
+        }
+      },
+      {
+        "content": "Which of these countries does not share a border (maritime or territorial) with Brazil?",
+        "score": "2",
+        "options": {
+          "Venezuela": false,
+          "Colombia": false,
+          "Argentina": false,
+          "Guatemala": true
+        }
+      },
+      {
+        "content": "What is the biggest city in Brazil?",
+        "score": "2",
+        "options": {
+          "Recife": false,
+          "São Paulo": true,
+          "Salvador": false,
+          "Rio de Janeiro": false
+        }
+      },
+      {
+        "content": "What is the biggest river in Brazil by length?",
+        "score": "3",
+        "options": {
+          "Paraná River": false,
+          "São Francisco River": false,
+          "Amazon River": true,
+          "Madeira River": false
+        }
+      },
+      {
+        "content": "Who was the first emperor of Brazil?",
+        "score": "3",
+        "options": {
+          "Pedro II of Brazil": false,
+          "King João": false,
+          "Pedro I of Brazil": true,
+          "Antonio Conselheiro": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "Basic Russia Quiz",
+    "level": "basic",
+    "country": "Russia",
+    "questions": [
+      {
+        "content": "What is the capital of Russia?",
+        "score": "1",
+        "options": {
+          "San Petersburg": false,
+          "Moscow": true,
+          "Vladvostok": false,
+          "Kiev": false
+        }
+      },
+      {
+        "content": "Which of these countries does not share a border (maritime or territorial) with Russia?",
+        "score": "2",
+        "options": {
+          "North Korea": false,
+          "USA": false,
+          "Mongolia": false,
+          "Thailand": true
+        }
+      },
+      {
+        "content": "What is the biggest city in Russia?",
+        "score": "2",
+        "options": {
+          "Volgograd": false,
+          "Moscow": true,
+          "San Petersburg": false,
+          "Nizhny Novgorod": false
+        }
+      },
+      {
+        "content": "What is the biggest russian river by length?",
+        "score": "3",
+        "options": {
+          "Volga River": false,
+          "Ob River": false,
+          "Lena River": true,
+          "Irtysh River": false
+        }
+      },
+      {
+        "content": "Who was the first president of Russia?",
+        "score": "3",
+        "options": {
+          "Joseph Stalin": false,
+          "Vladimir Lenin": false,
+          "Boris Yeltsin": true,
+          "Vladimir Putin": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "Basic Egypt Quiz",
+    "level": "basic",
+    "country": "Egypt",
+    "questions": [
+      {
+        "content": "What is the capital of Egypt?",
+        "score": "1",
+        "options": {
+          "Alexandria": false,
+          "Cairo": true,
+          "Giza": false,
+          "Suez": false
+        }
+      },
+      {
+        "content": "Which of these countries does not share a border (maritime or territorial) with Egypt?",
+        "score": "2",
+        "options": {
+          "Libya": false,
+          "Sudan": false,
+          "Israel": false,
+          "Iraq": true
+        }
+      },
+      {
+        "content": "What is the biggest city in Egypt?",
+        "score": "2",
+        "options": {
+          "Suez": false,
+          "Cairo": true,
+          "Alexandria": false,
+          "Giza": false
+        }
+      },
+      {
+        "content": "How many wonders of the world are/were where is modern Egypt?",
+        "score": "3",
+        "options": {
+          "1": false,
+          "2": true,
+          "3": false,
+          "4": false
+        }
+      },
+      {
+        "content": "Which of the following was a prominent monarch in Ancient Egypt?",
+        "score": "3",
+        "options": {
+          "Julius Caesar": false,
+          "Bes": false,
+          "Cleopatra VII Philopator": true,
+          "Marcus Antonius": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "Basic Australia Quiz",
+    "level": "basic",
+    "country": "Australia",
+    "questions": [
+      {
+        "content": "What is the capital of Australia?",
+        "score": "1",
+        "options": {
+          "Sydney": false,
+          "Canberra": true,
+          "Melbourne": false,
+          "Belfast": false
+        }
+      },
+      {
+        "content": "Which of these countries does not surround Australia?",
+        "score": "2",
+        "options": {
+          "New Zealand": false,
+          "East Timor": false,
+          "Indonesia": false,
+          "Thailand": true
+        }
+      },
+      {
+        "content": "What is the biggest city in Australia?",
+        "score": "2",
+        "options": {
+          "Melbourne": false,
+          "Sydney": true,
+          "Canberra": false,
+          "Wellington": false
+        }
+      },
+      {
+        "content": "What is the biggest state in Australia by area?",
+        "score": "3",
+        "options": {
+          "Victoria": false,
+          "New South Wales": false,
+          "Western Australia": true,
+          "Tasmania": false
+        }
+      },
+      {
+        "content": "Who was the first prime-minister of Australia?",
+        "score": "3",
+        "options": {
+          "Alfred Deakin": false,
+          "Chris Watson": false,
+          "Edmund Barton": true,
+          "George Reid": false
         }
       }
     ]
