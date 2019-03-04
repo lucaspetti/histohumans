@@ -13,7 +13,4 @@ node_modules
 yarn-error.log
 .byebug_history
 .env*
-db/countries.json
-db/people.json
-db/quizzes.json
 db/to_add.json
