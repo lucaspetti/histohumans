@@ -1,27 +1,28 @@
 source 'https://rubygems.org'
 ruby '2.4.5'
 
+gem 'autoprefixer-rails'
 gem 'bootsnap', require: false
+
+gem "bootstrap-sass", ">= 3.4.1"
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.9.1'
+gem 'date'
+gem 'devise', '>= 4.7.1'
+gem 'fastimage'
+gem 'font-awesome-sass', '~> 5.5.0'
+gem 'htmlentities'
 gem 'jbuilder', '~> 2.0'
+gem 'json'
 gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.1'
 gem 'redis'
-gem 'json'
-gem 'autoprefixer-rails'
-gem "bootstrap-sass", ">= 3.4.1"
-gem 'font-awesome-sass', '~> 5.5.0'
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'webpacker'
-gem 'fastimage'
-gem 'date'
 gem 'wikipedia-client'
-gem 'htmlentities'
-gem 'cloudinary', '~> 1.9.1'
-gem 'carrierwave', '~> 1.2'
-gem 'devise'
+gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
