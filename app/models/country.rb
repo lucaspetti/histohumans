@@ -10,13 +10,11 @@ class Country < ApplicationRecord
   validates :name, presence: true
 
   def people?
-    true unless people.empty?
+    people.any?
   end
 
   def people_with_number(number)
-    people_array = []
-    people.each_with_index { |person, i| people_array << person if i < number }
-    return people_array
+    people.select { |person, i| people.index(person) < number }
   end
 
   def self.empty_count
