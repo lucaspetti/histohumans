@@ -30,14 +30,15 @@ end
 
 group :development, :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'dotenv-rails'
+  gem 'factory_bot_rails'
   gem 'launchy'
+  gem 'listen', '~> 3.0.5'
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'listen', '~> 3.0.5'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'dotenv-rails'
-  gem 'rspec-rails'
 end
