@@ -19,8 +19,6 @@ class Person < ApplicationRecord
   end
 
   def compatriots
-    compatriots = Person.where(country: country).to_ary
-    compatriots.delete(self)
-    compatriots
+    Person.where(country: country).where.not(id: self.id)
   end
 end
