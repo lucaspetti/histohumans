@@ -12,6 +12,7 @@ addons:
   postgresql: '9.6'
 before_script:
   - psql -c 'create database histohumans_test;' -U postgres
+  - bundle install
 script:
   - bundle exec rake db:schema:load
   - bundle exec rake db:test:prepare
