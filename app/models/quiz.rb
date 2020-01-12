@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Quiz < ApplicationRecord
   belongs_to :country, optional: true
   belongs_to :person, optional: true
@@ -5,7 +7,7 @@ class Quiz < ApplicationRecord
   has_many :questions, dependent: :destroy
 
   validates :name, uniqueness: true, presence: true
-  validates :level, inclusion: { in: ['basic', 'intermediate', 'advanced'],
-                                 message: "%{value} is not a valid level" },
+  validates :level, inclusion: { in: %w[basic intermediate advanced],
+                                 message: '%{value} is not a valid level' },
                     presence: true
 end
