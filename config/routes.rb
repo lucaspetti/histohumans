@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   # resources :people
   # resources :quizzes
   # resources :countries, only: [:show]
+
+  namespace :api, as: nil, defaults: { format: :json } do
+    namespace :v1, as: nil do
+      resources :people, only: %i[index show]
+    end
+  end
 end
