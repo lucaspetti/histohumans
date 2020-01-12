@@ -1,43 +1,97 @@
-AllCops:
-  Exclude:
-    - 'bin/**/*'
-    - 'db/**/*'
-    - 'config/**/*'
-    - 'node_modules/**/*'
-    - 'script/**/*'
-    - 'support/**/*'
-    - 'tmp/**/*'
-    - 'test/**/*'
+require: rubocop-rspec
 
-ConditionalAssignment:
-  Enabled: false
-StringLiterals:
-  Enabled: false
-RedundantReturn:
-  Enabled: false
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - "bin/*"
+    - "config/**/*"
+    - "coverage/**/*"
+    - "db/**/*"
+    - "lib/tasks/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "db/migrate/**/*"
+    - "node_modules/**/*"
+  UseCache: true
+  MaxFilesInCache: 3000
+
+Metrics/LineLength:
+  Max: 130
+  IgnoredPatterns: ['(\A|\s)#']
+
+Metrics/MethodLength:
+  Max: 28
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'config/routes.rb'
+    - 'config/initializers/devise.rb'
+    - 'Rakefile'
+    - 'app/admin/**/*.rb'
+
+
 Documentation:
   Enabled: false
-WordArray:
+
+RSpec/MultipleExpectations:
   Enabled: false
-AbcSize:
+
+RSpec/ExampleLength:
   Enabled: false
-MutableConstant:
+
+RSpec/AnyInstance:
   Enabled: false
-SignalException:
+
+RSpec/NestedGroups:
+  Max: 5
+Metrics/AbcSize:
   Enabled: false
-Casecmp:
+Style/LambdaCall:
   Enabled: false
-CyclomaticComplexity:
+Style/Lambda:
   Enabled: false
-MissingRespondToMissing:
+Style/StabbyLambdaParentheses:
   Enabled: false
-MethodMissingSuper:
+Layout/SpaceInLambdaLiteral:
   Enabled: false
-Style/FrozenStringLiteralComment:
+Style/BlockComments:
   Enabled: false
-LineLength:
-  Max: 120
-Style/EmptyMethod:
+RSpec/DescribeClass:
   Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 Bundler/OrderedGems:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+RSpec/MessageSpies:
+  Enabled: false
+RSpec/VerifiedDoubles:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
+Style/SymbolProc:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+RSpec/LetSetup:
+  Enabled: false
+RSpec/BeforeAfterAll:
   Enabled: false

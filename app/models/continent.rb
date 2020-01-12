@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Continent < ApplicationRecord
   has_many :countries
   has_many :people, through: :countries

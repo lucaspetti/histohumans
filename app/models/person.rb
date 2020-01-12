@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Person < ApplicationRecord
   belongs_to :country
   has_one :continent, through: :country
@@ -19,6 +21,6 @@ class Person < ApplicationRecord
   end
 
   def compatriots
-    Person.where(country: country).where.not(id: self.id)
+    Person.where(country: country).where.not(id: id)
   end
 end

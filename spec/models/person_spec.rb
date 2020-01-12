@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Person, type: :model do
@@ -7,21 +9,21 @@ RSpec.describe Person, type: :model do
   end
   let!(:second_person) { create :person, country_id: country.id }
 
-  it { should belong_to(:country) }
-  it { should have_one(:continent) }
+  it { is_expected.to belong_to(:country) }
+  it { is_expected.to have_one(:continent) }
 
   # it { should have_many(:maps).through(:country) }
-  it { should have_many(:quizzes) }
-  it { should have_one(:page) }
+  it { is_expected.to have_many(:quizzes) }
+  it { is_expected.to have_one(:page) }
 
-  it { should validate_presence_of(:first_name) }
-  it { should validate_presence_of(:birthdate) }
-  it { should validate_presence_of(:bio) }
+  it { is_expected.to validate_presence_of(:first_name) }
+  it { is_expected.to validate_presence_of(:birthdate) }
+  it { is_expected.to validate_presence_of(:bio) }
 
   describe 'Class methods' do
     describe '.sample' do
-      it 'should return a random person' do
-        expect(described_class.sample).to be_an_instance_of(Person)
+      it 'returns a random person' do
+        expect(described_class.sample).to be_an_instance_of(described_class)
       end
     end
   end

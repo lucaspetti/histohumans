@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PeopleController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
@@ -11,20 +13,15 @@ class PeopleController < ApplicationController
     @person = Person.find(params[:id])
   end
 
-  def new
-  end
+  def new; end
 
-  def create
-  end
+  def create; end
 
-  def edit
-  end
+  def edit; end
 
-  def update
-  end
+  def update; end
 
-  def delete
-  end
+  def delete; end
 
   # private
 

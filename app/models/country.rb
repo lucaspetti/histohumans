@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Country < ApplicationRecord
   mount_uploader :photo, PhotoUploader
   belongs_to :continent
@@ -14,7 +16,7 @@ class Country < ApplicationRecord
   end
 
   def people_with_number(number)
-    people.select { |person, i| people.index(person) < number }
+    people.select { |person| people.index(person) < number }
   end
 
   def self.empty_count
