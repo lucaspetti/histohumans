@@ -317,6 +317,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma
+  pundit
   rails (= 5.2.1)
   redis
   rspec-rails
