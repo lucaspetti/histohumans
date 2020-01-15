@@ -7,18 +7,28 @@ module Api
       before_action :find_person, only: :show
 
       def index
-        # @people = policy_scope(Person)
-        @people = Person.all.map(&:as_json)
+        @people = Person.where(person_params)
         render json: @people
       end
 
-      def show; end
+      def show
+        if @person.present?
+          render json: @person
+        else
+          render json: person_not_found
+        end
+      end
 
       private
 
       def find_person
-        @person = Person.find_by!(name: params[:name])
-        authorize @person
+        @person = Person.find(person_params[:id])
+      rescue ActiveRecord::RecordNotFound => e
+        render json: { status: 'error', message: e }
+      end
+
+      def person_params
+        params.permit(:first_name, :last_name, :id)
       end
     end
   end
