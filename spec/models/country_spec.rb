@@ -13,6 +13,9 @@ RSpec.describe Country, type: :model do
 
   it { is_expected.to validate_presence_of(:name) }
 
+  it { is_expected.to have_db_column(:period).of_type(:string) }
+  it { is_expected.to have_db_column(:code).of_type(:string) }
+
   describe 'Instance methods' do
     let(:brazil) { create :country, name: 'Brazil' }
     let!(:person) { create :person, country_id: brazil.id }

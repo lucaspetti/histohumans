@@ -20,6 +20,12 @@ RSpec.describe Person, type: :model do
   it { is_expected.to validate_presence_of(:birthdate) }
   it { is_expected.to validate_presence_of(:bio) }
 
+  it { is_expected.to have_db_column(:last_name).of_type(:string) }
+  it { is_expected.to have_db_column(:occupation).of_type(:string) }
+  it { is_expected.to have_db_column(:birthdate).of_type(:date) }
+  it { is_expected.to have_db_column(:death).of_type(:date) }
+  it { is_expected.to have_db_column(:bio).of_type(:text) }
+
   describe 'Class methods' do
     describe '.sample' do
       it 'returns a random person' do
