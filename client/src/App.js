@@ -26,8 +26,8 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>Welcome to Histohumans</p>
+          <p>{person.first_name}</p>
         </header>
-        <p>{person.first_name}</p>
       </div>
     );
   }
