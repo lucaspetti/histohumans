@@ -2,21 +2,17 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
-async function getPerson() {
-  const request = await axios.get('http://localhost:3001/api/v1/people/1.json')
-  console.log(request)
-  const data = await request.data
-  console.log(data)
-  return data
-}
-
 class App extends React.Component {
   state = { person: {} }
 
   componentDidMount() {
-    this.setState({
-      person: getPerson()
-    })
+    this.getPerson()
+  }
+
+  getPerson = async () => {
+    const request = await axios.get('http://localhost:3001/api/v1/people/1.json')
+    const data = await request.data
+    this.setState({ person: data })
   }
 
   render() {
@@ -26,7 +22,10 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>Welcome to Histohumans</p>
-          <p>{person.first_name}</p>
+          <p>{person.first_name} {person.last_name}</p>
+          <a href="/">
+            <img src={person.photo} alt={person.first_name + '_' + person.last_name} />
+          </a>
         </header>
       </div>
     );
