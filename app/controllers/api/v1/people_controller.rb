@@ -22,13 +22,13 @@ module Api
       private
 
       def find_person
-        @person = Person.find(person_params[:id])
+        @person = person_params[:sample] ? Person.sample : Person.find(person_params[:id])
       rescue ActiveRecord::RecordNotFound => e
         render json: { status: 'error', message: e }
       end
 
       def person_params
-        params.permit(:first_name, :last_name, :id)
+        params.permit(:first_name, :last_name, :id, :sample)
       end
     end
   end
