@@ -6,7 +6,6 @@ module Api
       # skip_before_action :authenticate_user!
 
       def index
-        # @pages = policy_scope(Page)
         @countries = Country.all.map(&:as_json)
       end
     end

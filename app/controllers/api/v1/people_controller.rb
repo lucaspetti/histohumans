@@ -12,11 +12,8 @@ module Api
       end
 
       def show
-        if @person.present?
-          render json: @person
-        else
-          render json: person_not_found
-        end
+        @person = find_person
+        render json: @person if @person.present?
       end
 
       private

@@ -12,8 +12,12 @@ module Search
       CONNECTION.run_request \
         method.downcase.to_sym,
         path,
-        ( body ? MultiJson.dump(body): nil ),
-        {'Content-Type' => 'application/json'}
+        (body ? MultiJson.dump(body) : nil),
+        { 'Content-Type' => 'application/json' }
     end
   end
 end
+
+# p client.cluster.health
+# client.index index: 'myindex', type: 'mytype', id: 'custom', body: { title: "Indexing from my client" }
+# client.search index: 'myindex', body: { query: { match: { title: 'client' }  } }
