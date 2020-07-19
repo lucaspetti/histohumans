@@ -51,5 +51,6 @@ group :development, :test do
 end
 
 group :test do
+  gem 'elasticsearch-extensions'
   gem 'shoulda-matchers'
 end

@@ -1,0 +1,39 @@
+# frozen_string_literal: true
+
+require 'elasticsearch/extensions/test/cluster'
+
+RSpec.configure do |config|
+  if ENV['TEST_CLUSTER_NAME'].present?
+    config.before :all, elasticsearch: true do
+      unless Elasticsearch::Extensions::Test::Cluster.running?(on: ENV['ELASTICSEARCH_TEST_URL'])
+        Elasticsearch::Extensions::Test::Cluster.start(
+          port: ENV['ELASTICSEARCH_TEST_URL'],
+          nodes: ENV['TEST_CLUSTER_NODES'],
+          timeout: 120
+        )
+      end
+    end
+
+    ## Stop elasticsearch cluster after test run
+    config.after :suite do
+      if Elasticsearch::Extensions::Test::Cluster.running?(on: ENV['ELASTICSEARCH_TEST_URL'])
+        Elasticsearch::Extensions::Test::Cluster.stop(
+          port: ENV['ELASTICSEARCH_TEST_URL'],
+          nodes: ENV['TEST_CLUSTER_NODES']
+        )
+      end
+    end
+
+    config.before do |example|
+      unless example.metadata[:elasticsearch]
+        # rubocop:disable RSpec/AnyInstance
+        # allow_any_instance_of(Person).to receive(:index!).and_return(nil)
+        # rubocop:enable RSpec/AnyInstance
+      end
+    end
+  end
+
+  config.before :each, elasticsearch: true do
+
+  end
+end
