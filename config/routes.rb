@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :people, only: %i[index show]
+      get '/search', to: 'searches#index'
     end
   end
 end

@@ -26,6 +26,8 @@ class App extends React.Component {
           <a href="/">
             <img src={person.photo} alt={person.first_name + '_' + person.last_name}  />
           </a>
+          <label for="esearch">Search Histohumans:</label>
+          <input type="search" id="esearch" name="esearch"></input>
         </header>
       </div>
     );
