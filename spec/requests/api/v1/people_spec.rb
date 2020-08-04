@@ -54,5 +54,15 @@ RSpec.describe 'Getting people', type: :request do
         expect(json['message']).to eq("Couldn't find Person with 'id'=wrong_id")
       end
     end
+
+    context 'when getting a sample person' do
+      let(:id) { 'sample' }
+
+      it 'returns a sample record' do
+        expect(response).to have_http_status(:ok)
+        expect(json.size).to eq(9)
+        expect(Person.pluck(:name)).to include json['name']
+      end
+    end
   end
 end

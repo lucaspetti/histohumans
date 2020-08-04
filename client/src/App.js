@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   getPerson = async () => {
-    const request = await axios.get('http://localhost:3001/api/v1/people/id.json?sample=true')
+    const request = await axios.get('http://localhost:3001/api/v1/people/sample')
     const data = await request.data
     this.setState({ person: data })
   }
