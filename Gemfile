@@ -13,6 +13,9 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 
+gem 'elasticsearch'
+gem 'wikipedia-client'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -32,6 +35,7 @@ group :development do
 end
 
 group :test do
+  gem 'elasticsearch-extensions'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'webmock'
