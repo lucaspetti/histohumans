@@ -1,8 +1,6 @@
-require 'services/search/indexer'
-
 namespace :index do
   task :development do
-    Search::Indexer.new.index_people
+    # Search::Indexer.new.index_people
   end
 end
 
