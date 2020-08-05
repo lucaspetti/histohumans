@@ -9,4 +9,6 @@ RSpec.describe Person, type: :model do
   it { is_expected.to have_db_column(:occupation).of_type(:string) }
   it { is_expected.to have_db_column(:birthdate).of_type(:datetime) }
   it { is_expected.to have_db_column(:death).of_type(:datetime) }
+  it { is_expected.to have_db_column(:image_url).of_type(:string) }
+  it { is_expected.to have_db_column(:bio).of_type(:text) }
 end

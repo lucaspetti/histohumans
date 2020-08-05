@@ -39,7 +39,7 @@ RSpec.describe 'Getting people', type: :request do
 
       it 'returns an object of the person' do
         expect(response).to have_http_status(:ok)
-        expect(json.size).to eq(9)
+        expect(json.size).to eq(11)
         expect(json['name']).to eq(person.name)
       end
     end
@@ -60,7 +60,7 @@ RSpec.describe 'Getting people', type: :request do
 
       it 'returns a sample record' do
         expect(response).to have_http_status(:ok)
-        expect(json.size).to eq(9)
+        expect(json.size).to eq(11)
         expect(Person.pluck(:name)).to include json['name']
       end
     end
