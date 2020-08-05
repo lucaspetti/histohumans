@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   getPerson = async () => {
-    const request = await axios.get('http://localhost:3001/api/v1/people/id.json?sample=true')
+    const request = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/people/sample`)
     const data = await request.data
     this.setState({ person: data })
   }
@@ -22,10 +22,10 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>Welcome to Histohumans</p>
-          <p>{person.first_name} {person.last_name}</p>
           <a href="/">
-            <img src={person.photo} alt={person.first_name + '_' + person.last_name}  />
+            <img src={person.image_url} alt={person.first_name + '_' + person.last_name}  />
           </a>
+          <p>{person.name}</p>
         </header>
       </div>
     );
