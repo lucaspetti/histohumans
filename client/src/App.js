@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   getPerson = async () => {
-    const request = await axios.get('http://localhost:3001/api/v1/people/sample')
+    const request = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/people/sample`)
     const data = await request.data
     this.setState({ person: data })
   }
