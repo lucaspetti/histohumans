@@ -31,7 +31,7 @@ module Api
       end
 
       def person_params
-        params.permit(:first_name, :last_name, :id)
+        params.permit(:name, :id)
       end
     end
   end
