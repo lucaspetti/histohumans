@@ -14,6 +14,7 @@ gem 'pg'
 gem 'puma', '~> 4.1'
 
 gem 'elasticsearch'
+gem 'rack-cors'
 gem 'wikipedia-client'
 
 group :development, :test do
