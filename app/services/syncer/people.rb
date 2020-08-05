@@ -5,7 +5,6 @@ require 'wikipedia'
 module Syncer
   class People
     def initialize(records)
-      @client = Wikipedia
       @records = records
     end
 
@@ -25,7 +24,8 @@ module Syncer
     def get_attributes_from(page)
       {
         bio: page.summary,
-        image_url: page.main_image_url
+        image_url: page.main_image_url,
+        url: page.fullurl
       }
     end
 
