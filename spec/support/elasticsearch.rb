@@ -35,15 +35,13 @@ RSpec.configure do |config|
 
     config.before do |example|
       unless example.metadata[:elasticsearch]
-        # rubocop:disable RSpec/AnyInstance
         # allow_any_instance_of(Person).to receive(:index!).and_return(nil)
-        # rubocop:enable RSpec/AnyInstance
+
       end
     end
   end
 
   config.before :each, elasticsearch: true do
-
     Search::Indexer.new.index_people
 
     Search::DEFAULT_ES_CLIENT.indices.delete index: '_all'
