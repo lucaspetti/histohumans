@@ -5,7 +5,7 @@ module Search
     def index_people
       people = Person.all
       people.each do |person|
-        index(index: @index_name, type: 'person', id: person.id, body: person.as_json)
+        index(index: @search_index, type: 'person', id: person.id, body: person.as_json)
       end
     end
   end
