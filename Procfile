@@ -1,3 +1,2 @@
-client: PORT=3000 yarn --cwd client start
-web: bundle exec puma -p ${PORT:-3001} -C ./config/puma.rb
-worker: bundle exec rails jobs:work
+web: bundle exec rails s
+release: bin/rake db:migrate
