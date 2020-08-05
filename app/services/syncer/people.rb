@@ -17,7 +17,7 @@ module Syncer
     private
 
     def find_page_and_update(record)
-      page = Wikipedia.find(record.slug)
+      page = Wikipedia.find(record.name)
       attributes = get_attributes_from(page)
       update_record(record, attributes)
     end
@@ -25,7 +25,7 @@ module Syncer
     def get_attributes_from(page)
       {
         bio: page.summary,
-        image: page.main_image_url
+        image_url: page.main_image_url
       }
     end
 

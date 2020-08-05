@@ -7,6 +7,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getPerson()
+    console.log(this.state)
   }
 
   getPerson = async () => {
@@ -24,7 +25,7 @@ class App extends React.Component {
           <p>Welcome to Histohumans</p>
           <p>{person.first_name} {person.last_name}</p>
           <a href="/">
-            <img src={person.photo} alt={person.first_name + '_' + person.last_name}  />
+            <img src={person.image_url} alt={person.first_name + '_' + person.last_name}  />
           </a>
         </header>
       </div>
