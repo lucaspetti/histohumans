@@ -12,6 +12,9 @@ test:
   database: histohumans_test
 
 production: &deploy
+  database: histohumans_production
+  username: histohumans
+  password: <%= ENV['HISTOHUMANS_DATABASE_PASSWORD'] %>
   encoding: utf8
   min_messages: warning
   pool: <%= [Integer(ENV.fetch("MAX_THREADS", 5)), Integer(ENV.fetch("DB_POOL", 5))].max %>
