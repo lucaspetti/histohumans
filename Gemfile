@@ -11,7 +11,7 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 
-gem 'elasticsearch'
+gem 'elasticsearch-model'
 gem 'rack-cors'
 gem 'wikipedia-client'
 
