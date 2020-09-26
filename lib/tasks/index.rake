@@ -1,6 +1,8 @@
 namespace :index do
   task :development do
-    # Search::Indexer.new.index_people
+    Person.all.each do |person|
+      Search::Indexer.new(person, 'index').call
+    end
   end
 end
 

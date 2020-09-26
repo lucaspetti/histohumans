@@ -14,15 +14,6 @@ RSpec.configure do |config|
       end
     end
 
-    # config.before :each, elasticsearch: true do
-    #   Search::DEFAULT_ES_CLIENT.indices.delete index: '_all'
-    #
-    #   repo = Search::SearchService.new
-    #   suggestions_repo = Search::SuggestionsService.new
-    #   repo.create_index! force: true
-    #   suggestions_repo.create_index! force: true
-    # end
-
     ## Stop elasticsearch cluster after test run
     config.after :suite do
       if Elasticsearch::Extensions::Test::Cluster.running?(on: ENV['ELASTICSEARCH_TEST_URL'])
@@ -30,13 +21,6 @@ RSpec.configure do |config|
           port: ENV['ELASTICSEARCH_TEST_URL'],
           nodes: ENV['TEST_CLUSTER_NODES']
         )
-      end
-    end
-
-    config.before do |example|
-      unless example.metadata[:elasticsearch]
-        # allow_any_instance_of(Person).to receive(:index!).and_return(nil)
-
       end
     end
   end
