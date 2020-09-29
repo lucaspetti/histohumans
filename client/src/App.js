@@ -17,13 +17,14 @@ class App extends React.Component {
 
   render() {
     const { person } = this.state
+    const placeholderImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/201812_Homo_sapiens_neanderthalensis.svg/512px-201812_Homo_sapiens_neanderthalensis.svg.png'
 
     return (
       <div className="App">
         <header className="App-header">
           <p>Welcome to Histohumans</p>
-          <a href="/">
-            <img src={person.image_url} alt={person.first_name + '_' + person.last_name}  />
+          <a href={person.url || '/'} target="_blank">
+            <img src={person.image_url || placeholderImage} alt={person.first_name + '_' + person.last_name} />
           </a>
           <p>{person.name}</p>
         </header>
