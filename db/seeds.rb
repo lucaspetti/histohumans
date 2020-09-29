@@ -11,4 +11,8 @@ puts 'Seeding database...'
 
 people.each { |params| Person.create!(params) }
 
+puts 'Fetching data from Wikipedia...'
+
+Syncer::People.new(Person.all).call
+
 puts 'Done'
