@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>Welcome to Histohumans</p>
+          <p>Welcome to Histohumans (more coming soon!)</p>
           <a href={person.url || '/'} target="_blank">
             <img src={person.image_url || placeholderImage} alt={person.first_name + '_' + person.last_name} />
           </a>
