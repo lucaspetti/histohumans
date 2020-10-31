@@ -1,6 +1,6 @@
 development: &default
   adapter: postgresql
-  database: histohumans_development
+  database: <%= ENV['HISTOHUMANS_DATABASE_NAME'] %>
   encoding: utf8
   min_messages: warning
   pool: <%= Integer(ENV.fetch("DB_POOL", 5)) %>
@@ -12,8 +12,8 @@ test:
   database: histohumans_test
 
 production: &deploy
-  database: histohumans_production
-  username: histohumans
+  database: <%= ENV['HISTOHUMANS_DATABASE_NAME'] %>
+  username: <%= ENV['HISTOHUMANS_DATABASE_USERNAME'] %>
   password: <%= ENV['HISTOHUMANS_DATABASE_PASSWORD'] %>
   encoding: utf8
   min_messages: warning
