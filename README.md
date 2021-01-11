@@ -1,15 +1,19 @@
-# README
+# Histohumans
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Basic setup
 
 * Ruby version: 2.6.3
-
 * Rails version: 6.0.3.2
 
-* Frontend running with React
+Make sure you have the correct ruby version installed and the bundler gem, then run:
 
-* System dependencies
+`rake db:create db:migrate db:seed`
+
+To run the backend:
+
+`rails s`
+
+
 
 * Configuration
 
