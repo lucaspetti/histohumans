@@ -13,18 +13,14 @@ To run the backend:
 
 `rails s`
 
+## Running with docker
 
+Make sure you have docker installed and run:
 
-* Configuration
+```docker-compose up```
 
-* Database creation
+The command should start all services described on the docker-compose.yml file.
 
-* Database initialization
+Then setup the database:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```docker-compose run api bundle exec rails db:setup```
