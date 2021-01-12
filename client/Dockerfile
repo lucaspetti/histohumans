@@ -1,16 +1,19 @@
-FROM node:9.6.1
+FROM node:13.12.0-alpine
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # add `/usr/src/app/node_modules/.bin` to $PATH
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY . .
+COPY package.json ./
+COPY yarn.lock ./
 
 RUN npm install --silent
-RUN npm install react-scripts@1.1.1 -g
+RUN npm install react-scripts -g --silent
+
+# add app
+COPY . ./
 
 # start app
 CMD ["npm", "start"]
