@@ -13,7 +13,6 @@ gem 'puma', '~> 5.0'
 
 gem 'elasticsearch'
 gem 'rack-cors'
-gem 'tzinfo-data'
 gem 'wikipedia-client'
 
 group :development, :test do
