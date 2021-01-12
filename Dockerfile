@@ -1,15 +1,28 @@
-FROM starefossen/ruby-node:2-8-alpine
+FROM ruby:2.6
 
-RUN apk add postgresql-client elasticsearch\
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev vim
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+ENV APP_HOME /usr/src/app
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+
+ENV BUNDLE_PATH /box
+ENV GEM_PATH /box
+ENV GEM_HOME /box
+
+ADD . $APP_HOME
+
+ENV BUNDLER_VERSION 2.1.4
+RUN gem install bundler -v $BUNDLER_VERSION
+RUN gem install tzinfo
+
 COPY Gemfile Gemfile.lock ./
 
 RUN ruby -v
-ENV BUNDLER_VERSION 2.1.4
-RUN gem update --system \
-    && gem install bundler -v $BUNDLER_VERSION \
-    && bundle install -j 4
+RUN bundle install
 
 COPY . .
+
+EXPOSE 3001
+
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3001"]
