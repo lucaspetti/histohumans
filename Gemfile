@@ -9,7 +9,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.3'
 
 gem 'elasticsearch'
 gem 'rack-cors'
